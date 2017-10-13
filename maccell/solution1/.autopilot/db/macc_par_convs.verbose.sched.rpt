@@ -1,0 +1,1488 @@
+
+
+================================================================
+== Vivado HLS Report for 'macc_par_convs'
+================================================================
+* Date:           Fri Oct 13 14:57:47 2017
+
+* Version:        2017.2 (Build 1909853 on Wed Aug 23 11:51:38 MDT 2017)
+* Project:        maccell
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-1-i-es1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.21|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +----------+----------+----------+----------+---------+
+    |       Latency       |       Interval      | Pipeline|
+    |    min   |    max   |    min   |    max   |   Type  |
+    +----------+----------+----------+----------+---------+
+    |  22107649|  22107649|  22107650|  22107650|   none  |
+    +----------+----------+----------+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+----------+----------+----------+-----------+-----------+------+----------+
+        |             |       Latency       | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |    min   |    max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+----------+----------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  22107648|  22107648|      3112|          -|          -|  7104|    no    |
+        | + Loop 1.1  |      3109|      3109|        16|         14|          1|   222|    yes   |
+        +-------------+----------+----------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 14, depth = 16
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 19
+* Pipeline: 1
+  Pipeline-0: II = 14, D = 16, States = { 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond_flatten)
+3 --> 
+	19  / (tmp_6)
+	4  / (!tmp_6)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	3  / true
+19 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 0.76ns
+ST_1: StgValue_20 (30)  [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_26), !map !22
+
+ST_1: StgValue_21 (31)  [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_25), !map !28
+
+ST_1: StgValue_22 (32)  [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_24), !map !34
+
+ST_1: StgValue_23 (33)  [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_23), !map !40
+
+ST_1: StgValue_24 (34)  [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_22), !map !46
+
+ST_1: StgValue_25 (35)  [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_21), !map !52
+
+ST_1: StgValue_26 (36)  [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_20), !map !58
+
+ST_1: StgValue_27 (37)  [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_19), !map !64
+
+ST_1: StgValue_28 (38)  [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_18), !map !70
+
+ST_1: StgValue_29 (39)  [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_17), !map !76
+
+ST_1: StgValue_30 (40)  [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_16), !map !82
+
+ST_1: StgValue_31 (41)  [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_15), !map !88
+
+ST_1: StgValue_32 (42)  [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_14), !map !94
+
+ST_1: StgValue_33 (43)  [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_13), !map !100
+
+ST_1: StgValue_34 (44)  [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_12), !map !106
+
+ST_1: StgValue_35 (45)  [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_11), !map !112
+
+ST_1: StgValue_36 (46)  [1/1] 0.00ns
+:16  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_10), !map !118
+
+ST_1: StgValue_37 (47)  [1/1] 0.00ns
+:17  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_9), !map !124
+
+ST_1: StgValue_38 (48)  [1/1] 0.00ns
+:18  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_8), !map !130
+
+ST_1: StgValue_39 (49)  [1/1] 0.00ns
+:19  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_7), !map !136
+
+ST_1: StgValue_40 (50)  [1/1] 0.00ns
+:20  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_6), !map !142
+
+ST_1: StgValue_41 (51)  [1/1] 0.00ns
+:21  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_5), !map !148
+
+ST_1: StgValue_42 (52)  [1/1] 0.00ns
+:22  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_4), !map !154
+
+ST_1: StgValue_43 (53)  [1/1] 0.00ns
+:23  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_3), !map !160
+
+ST_1: StgValue_44 (54)  [1/1] 0.00ns
+:24  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_2), !map !166
+
+ST_1: StgValue_45 (55)  [1/1] 0.00ns
+:25  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_1), !map !172
+
+ST_1: StgValue_46 (56)  [1/1] 0.00ns
+:26  call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_0), !map !178
+
+ST_1: StgValue_47 (57)  [1/1] 0.00ns
+:27  call void (...)* @_ssdm_op_SpecBitsMap([150528 x i32]* %A) nounwind, !map !184
+
+ST_1: StgValue_48 (58)  [1/1] 0.00ns
+:28  call void (...)* @_ssdm_op_SpecBitsMap(i32* %C), !map !190
+
+ST_1: StgValue_49 (59)  [1/1] 0.00ns
+:29  call void (...)* @_ssdm_op_SpecTopModule([15 x i8]* @macc_par_convs_str) nounwind
+
+ST_1: StgValue_50 (60)  [1/1] 0.00ns
+:30  call void (...)* @_ssdm_op_SpecInterface([150528 x i32]* %A, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind
+
+ST_1: StgValue_51 (61)  [1/1] 0.00ns
+:31  call void (...)* @_ssdm_op_SpecInterface([32 x i32]* %B_0, [32 x i32]* %B_1, [32 x i32]* %B_2, [32 x i32]* %B_3, [32 x i32]* %B_4, [32 x i32]* %B_5, [32 x i32]* %B_6, [32 x i32]* %B_7, [32 x i32]* %B_8, [32 x i32]* %B_9, [32 x i32]* %B_10, [32 x i32]* %B_11, [32 x i32]* %B_12, [32 x i32]* %B_13, [32 x i32]* %B_14, [32 x i32]* %B_15, [32 x i32]* %B_16, [32 x i32]* %B_17, [32 x i32]* %B_18, [32 x i32]* %B_19, [32 x i32]* %B_20, [32 x i32]* %B_21, [32 x i32]* %B_22, [32 x i32]* %B_23, [32 x i32]* %B_24, [32 x i32]* %B_25, [32 x i32]* %B_26, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind
+
+ST_1: StgValue_52 (62)  [1/1] 0.00ns
+:32  call void (...)* @_ssdm_op_SpecInterface(i32* %C, [5 x i8]* @p_str210, i32 1, i32 1, [5 x i8]* @p_str311, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19)
+
+ST_1: StgValue_53 (63)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:21
+:33  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str412, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [9 x i8]* @p_str513, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind
+
+ST_1: StgValue_54 (64)  [1/1] 0.00ns
+:34  call void (...)* @_ssdm_op_SpecMemCore([32 x i32]* %B_0, [32 x i32]* %B_1, [32 x i32]* %B_2, [32 x i32]* %B_3, [32 x i32]* %B_4, [32 x i32]* %B_5, [32 x i32]* %B_6, [32 x i32]* %B_7, [32 x i32]* %B_8, [32 x i32]* %B_9, [32 x i32]* %B_10, [32 x i32]* %B_11, [32 x i32]* %B_12, [32 x i32]* %B_13, [32 x i32]* %B_14, [32 x i32]* %B_15, [32 x i32]* %B_16, [32 x i32]* %B_17, [32 x i32]* %B_18, [32 x i32]* %B_19, [32 x i32]* %B_20, [32 x i32]* %B_21, [32 x i32]* %B_22, [32 x i32]* %B_23, [32 x i32]* %B_24, [32 x i32]* %B_25, [32 x i32]* %B_26, [1 x i8]* @p_str19, [13 x i8]* @p_str614, [1 x i8]* @p_str19, i32 -1, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19)
+
+ST_1: StgValue_55 (65)  [1/1] 0.76ns  loc: maccell/src/macc_par_convs.cpp:29
+:35  br label %.preheader
+
+
+ <State 2>: 3.38ns
+ST_2: indvar_flatten (67)  [1/1] 0.00ns
+.preheader:0  %indvar_flatten = phi i13 [ 0, %0 ], [ %indvar_flatten_next, %.preheader.loopexit ]
+
+ST_2: channel_out (68)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader:1  %channel_out = phi i6 [ 0, %0 ], [ %channel_out2_mid2_v, %.preheader.loopexit ]
+
+ST_2: center_x (69)  [1/1] 0.00ns
+.preheader:2  %center_x = phi i8 [ 0, %0 ], [ %center_x_1, %.preheader.loopexit ]
+
+ST_2: exitcond_flatten (70)  [1/1] 0.86ns
+.preheader:3  %exitcond_flatten = icmp eq i13 %indvar_flatten, -1088
+
+ST_2: indvar_flatten_next (71)  [1/1] 0.98ns
+.preheader:4  %indvar_flatten_next = add i13 %indvar_flatten, 1
+
+ST_2: StgValue_61 (72)  [1/1] 0.00ns
+.preheader:5  br i1 %exitcond_flatten, label %3, label %.preheader.preheader
+
+ST_2: empty_3 (74)  [1/1] 0.00ns
+.preheader.preheader:0  %empty_3 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7104, i64 7104, i64 7104)
+
+ST_2: tmp_3 (75)  [1/1] 0.86ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:1  %tmp_3 = icmp eq i8 %center_x, -34
+
+ST_2: center_x_mid2 (76)  [1/1] 0.55ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:2  %center_x_mid2 = select i1 %tmp_3, i8 0, i8 %center_x
+
+ST_2: channel_out_s (77)  [1/1] 0.89ns  loc: maccell/src/macc_par_convs.cpp:29
+.preheader.preheader:3  %channel_out_s = add i6 %channel_out, 1
+
+ST_2: channel_out2_mid2_v (78)  [1/1] 0.55ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:4  %channel_out2_mid2_v = select i1 %tmp_3, i6 %channel_out_s, i6 %channel_out
+
+ST_2: channel_out2_mid2 (79)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:5  %channel_out2_mid2 = zext i6 %channel_out2_mid2_v to i64
+
+ST_2: center_x_cast1 (80)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:6  %center_x_cast1 = zext i8 %center_x_mid2 to i10
+
+ST_2: center_x_cast (81)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:7  %center_x_cast = zext i8 %center_x_mid2 to i9
+
+ST_2: p_shl (82)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:8  %p_shl = call i16 @_ssdm_op_BitConcatenate.i16.i8.i8(i8 %center_x_mid2, i8 0)
+
+ST_2: p_shl12_cast (83)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:9  %p_shl12_cast = zext i16 %p_shl to i17
+
+ST_2: p_shl1 (84)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:10  %p_shl1 = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %center_x_mid2, i5 0)
+
+ST_2: p_shl13_cast (85)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:11  %p_shl13_cast = zext i13 %p_shl1 to i17
+
+ST_2: tmp_s (86)  [1/1] 1.02ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:12  %tmp_s = sub i17 %p_shl12_cast, %p_shl13_cast
+
+ST_2: center_x_1 (87)  [1/1] 0.91ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:13  %center_x_1 = add i8 %center_x_mid2, 1
+
+ST_2: p_shl12_0_1 (88)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:14  %p_shl12_0_1 = call i16 @_ssdm_op_BitConcatenate.i16.i8.i8(i8 %center_x_1, i8 0)
+
+ST_2: p_shl12_0_1_cast (89)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:15  %p_shl12_0_1_cast = zext i16 %p_shl12_0_1 to i17
+
+ST_2: p_shl13_0_1 (90)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:16  %p_shl13_0_1 = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %center_x_1, i5 0)
+
+ST_2: p_shl13_0_1_cast (91)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:17  %p_shl13_0_1_cast = zext i13 %p_shl13_0_1 to i17
+
+ST_2: tmp_12_0_1 (92)  [1/1] 1.02ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:18  %tmp_12_0_1 = sub i17 %p_shl12_0_1_cast, %p_shl13_0_1_cast
+
+ST_2: tmp_11_0_2 (93)  [1/1] 0.91ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:19  %tmp_11_0_2 = add i8 %center_x_mid2, 2
+
+ST_2: p_shl12_0_2 (94)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:20  %p_shl12_0_2 = call i16 @_ssdm_op_BitConcatenate.i16.i8.i8(i8 %tmp_11_0_2, i8 0)
+
+ST_2: p_shl12_0_2_cast (95)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:21  %p_shl12_0_2_cast = zext i16 %p_shl12_0_2 to i17
+
+ST_2: p_shl13_0_2 (96)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:22  %p_shl13_0_2 = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %tmp_11_0_2, i5 0)
+
+ST_2: p_shl13_0_2_cast (97)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:23  %p_shl13_0_2_cast = zext i13 %p_shl13_0_2 to i17
+
+ST_2: tmp_12_0_2 (98)  [1/1] 1.02ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:24  %tmp_12_0_2 = sub i17 %p_shl12_0_2_cast, %p_shl13_0_2_cast
+
+ST_2: tmp_11_1 (99)  [1/1] 0.92ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:25  %tmp_11_1 = add i9 %center_x_cast, 224
+
+ST_2: p_shl12_1 (100)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:26  %p_shl12_1 = call i17 @_ssdm_op_BitConcatenate.i17.i9.i8(i9 %tmp_11_1, i8 0)
+
+ST_2: p_shl13_1 (101)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:27  %p_shl13_1 = call i14 @_ssdm_op_BitConcatenate.i14.i9.i5(i9 %tmp_11_1, i5 0)
+
+ST_2: p_shl13_1_cast (102)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:28  %p_shl13_1_cast = zext i14 %p_shl13_1 to i17
+
+ST_2: tmp_12_1 (103)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:29  %tmp_12_1 = sub i17 %p_shl12_1, %p_shl13_1_cast
+
+ST_2: tmp_11_1_1 (104)  [1/1] 0.92ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:30  %tmp_11_1_1 = add i9 %center_x_cast, 225
+
+ST_2: p_shl12_1_1 (105)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:31  %p_shl12_1_1 = call i17 @_ssdm_op_BitConcatenate.i17.i9.i8(i9 %tmp_11_1_1, i8 0)
+
+ST_2: p_shl13_1_1 (106)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:32  %p_shl13_1_1 = call i14 @_ssdm_op_BitConcatenate.i14.i9.i5(i9 %tmp_11_1_1, i5 0)
+
+ST_2: p_shl13_1_1_cast (107)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:33  %p_shl13_1_1_cast = zext i14 %p_shl13_1_1 to i17
+
+ST_2: tmp_12_1_1 (108)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:34  %tmp_12_1_1 = sub i17 %p_shl12_1_1, %p_shl13_1_1_cast
+
+ST_2: tmp_11_1_2 (109)  [1/1] 0.92ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:35  %tmp_11_1_2 = add i9 %center_x_cast, 226
+
+ST_2: p_shl12_1_2 (110)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:36  %p_shl12_1_2 = call i17 @_ssdm_op_BitConcatenate.i17.i9.i8(i9 %tmp_11_1_2, i8 0)
+
+ST_2: p_shl13_1_2 (111)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:37  %p_shl13_1_2 = call i14 @_ssdm_op_BitConcatenate.i14.i9.i5(i9 %tmp_11_1_2, i5 0)
+
+ST_2: p_shl13_1_2_cast (112)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:38  %p_shl13_1_2_cast = zext i14 %p_shl13_1_2 to i17
+
+ST_2: tmp_12_1_2 (113)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:39  %tmp_12_1_2 = sub i17 %p_shl12_1_2, %p_shl13_1_2_cast
+
+ST_2: tmp_11_2 (114)  [1/1] 0.93ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:40  %tmp_11_2 = add i10 %center_x_cast1, 448
+
+ST_2: p_shl12_2 (115)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:41  %p_shl12_2 = call i18 @_ssdm_op_BitConcatenate.i18.i10.i8(i10 %tmp_11_2, i8 0)
+
+ST_2: p_shl13_2 (116)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:42  %p_shl13_2 = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_11_2, i5 0)
+
+ST_2: p_shl13_2_cast (117)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:43  %p_shl13_2_cast = zext i15 %p_shl13_2 to i18
+
+ST_2: tmp_12_2 (118)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:44  %tmp_12_2 = sub i18 %p_shl12_2, %p_shl13_2_cast
+
+ST_2: tmp_11_2_1 (119)  [1/1] 0.93ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:45  %tmp_11_2_1 = add i10 %center_x_cast1, 449
+
+ST_2: p_shl12_2_1 (120)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:46  %p_shl12_2_1 = call i18 @_ssdm_op_BitConcatenate.i18.i10.i8(i10 %tmp_11_2_1, i8 0)
+
+ST_2: p_shl13_2_1 (121)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:47  %p_shl13_2_1 = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_11_2_1, i5 0)
+
+ST_2: p_shl13_2_1_cast (122)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:48  %p_shl13_2_1_cast = zext i15 %p_shl13_2_1 to i18
+
+ST_2: tmp_12_2_1 (123)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:49  %tmp_12_2_1 = sub i18 %p_shl12_2_1, %p_shl13_2_1_cast
+
+ST_2: tmp_11_2_2 (124)  [1/1] 0.93ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:50  %tmp_11_2_2 = add i10 %center_x_cast1, 450
+
+ST_2: p_shl12_2_2 (125)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:51  %p_shl12_2_2 = call i18 @_ssdm_op_BitConcatenate.i18.i10.i8(i10 %tmp_11_2_2, i8 0)
+
+ST_2: p_shl13_2_2 (126)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:52  %p_shl13_2_2 = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_11_2_2, i5 0)
+
+ST_2: p_shl13_2_2_cast (127)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:53  %p_shl13_2_2_cast = zext i15 %p_shl13_2_2 to i18
+
+ST_2: tmp_12_2_2 (128)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+.preheader.preheader:54  %tmp_12_2_2 = sub i18 %p_shl12_2_2, %p_shl13_2_2_cast
+
+ST_2: B_0_addr (129)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:55  %B_0_addr = getelementptr [32 x i32]* %B_0, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_1_addr (130)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:56  %B_1_addr = getelementptr [32 x i32]* %B_1, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_2_addr (131)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:57  %B_2_addr = getelementptr [32 x i32]* %B_2, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_3_addr (132)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:58  %B_3_addr = getelementptr [32 x i32]* %B_3, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_4_addr (133)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:59  %B_4_addr = getelementptr [32 x i32]* %B_4, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_5_addr (134)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:60  %B_5_addr = getelementptr [32 x i32]* %B_5, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_6_addr (135)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:61  %B_6_addr = getelementptr [32 x i32]* %B_6, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_7_addr (136)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:62  %B_7_addr = getelementptr [32 x i32]* %B_7, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_8_addr (137)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:63  %B_8_addr = getelementptr [32 x i32]* %B_8, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_9_addr (138)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:64  %B_9_addr = getelementptr [32 x i32]* %B_9, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_10_addr (139)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:65  %B_10_addr = getelementptr [32 x i32]* %B_10, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_11_addr (140)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:66  %B_11_addr = getelementptr [32 x i32]* %B_11, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_12_addr (141)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:67  %B_12_addr = getelementptr [32 x i32]* %B_12, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_13_addr (142)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:68  %B_13_addr = getelementptr [32 x i32]* %B_13, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_14_addr (143)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:69  %B_14_addr = getelementptr [32 x i32]* %B_14, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_15_addr (144)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:70  %B_15_addr = getelementptr [32 x i32]* %B_15, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_16_addr (145)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:71  %B_16_addr = getelementptr [32 x i32]* %B_16, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_17_addr (146)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:72  %B_17_addr = getelementptr [32 x i32]* %B_17, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_18_addr (147)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:73  %B_18_addr = getelementptr [32 x i32]* %B_18, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_19_addr (148)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:74  %B_19_addr = getelementptr [32 x i32]* %B_19, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_20_addr (149)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:75  %B_20_addr = getelementptr [32 x i32]* %B_20, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_21_addr (150)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:76  %B_21_addr = getelementptr [32 x i32]* %B_21, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_22_addr (151)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:77  %B_22_addr = getelementptr [32 x i32]* %B_22, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_23_addr (152)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:78  %B_23_addr = getelementptr [32 x i32]* %B_23, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_24_addr (153)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:79  %B_24_addr = getelementptr [32 x i32]* %B_24, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_25_addr (154)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:80  %B_25_addr = getelementptr [32 x i32]* %B_25, i64 0, i64 %channel_out2_mid2
+
+ST_2: B_26_addr (155)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:31
+.preheader.preheader:81  %B_26_addr = getelementptr [32 x i32]* %B_26, i64 0, i64 %channel_out2_mid2
+
+ST_2: StgValue_144 (156)  [1/1] 0.76ns  loc: maccell/src/macc_par_convs.cpp:36
+.preheader.preheader:82  br label %1
+
+ST_2: StgValue_145 (371)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:73
+:0  ret void
+
+
+ <State 3>: 3.41ns
+ST_3: center_y (158)  [1/1] 0.00ns
+:0  %center_y = phi i8 [ %center_y_1, %2 ], [ 0, %.preheader.preheader ]
+
+ST_3: tmp_6 (159)  [1/1] 0.86ns  loc: maccell/src/macc_par_convs.cpp:36
+:1  %tmp_6 = icmp eq i8 %center_y, -34
+
+ST_3: center_y_1 (160)  [1/1] 0.91ns  loc: maccell/src/macc_par_convs.cpp:36
+:2  %center_y_1 = add i8 %center_y, 1
+
+ST_3: StgValue_149 (161)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:36
+:3  br i1 %tmp_6, label %.preheader.loopexit, label %2
+
+ST_3: center_y_cast (163)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:36
+:0  %center_y_cast = zext i8 %center_y to i18
+
+ST_3: center_y_cast1 (164)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:36
+:1  %center_y_cast1 = zext i8 %center_y to i17
+
+ST_3: input_coords (168)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:5  %input_coords = add i17 %tmp_s, %center_y_cast1
+
+ST_3: input_coords_0_cast (169)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+:6  %input_coords_0_cast = sext i17 %input_coords to i32
+
+ST_3: tmp_1 (170)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:7  %tmp_1 = zext i32 %input_coords_0_cast to i64
+
+ST_3: A_addr (171)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:8  %A_addr = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_1
+
+ST_3: A_load (172)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:9  %A_load = load i32* %A_addr, align 4
+
+ST_3: B_0_load (173)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:10  %B_0_load = load i32* %B_0_addr, align 4
+
+ST_3: input_coords_0_0_1 (175)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:12  %input_coords_0_0_1 = add i17 %input_coords, 1
+
+ST_3: input_coords_0_0_1_c (176)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+:13  %input_coords_0_0_1_c = sext i17 %input_coords_0_0_1 to i32
+
+ST_3: tmp_16_0_0_1 (177)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:14  %tmp_16_0_0_1 = zext i32 %input_coords_0_0_1_c to i64
+
+ST_3: A_addr_1 (178)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:15  %A_addr_1 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_0_1
+
+ST_3: A_load_1 (179)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:16  %A_load_1 = load i32* %A_addr_1, align 4
+
+ST_3: B_1_load (180)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:17  %B_1_load = load i32* %B_1_addr, align 4
+
+ST_3: input_coords_2 (285)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+:122  %input_coords_2 = add i18 %tmp_12_2, %center_y_cast
+
+ST_3: input_coords_2_1 (303)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+:140  %input_coords_2_1 = add i18 %tmp_12_2_1, %center_y_cast
+
+ST_3: input_coords_2_2 (321)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+:158  %input_coords_2_2 = add i18 %tmp_12_2_2, %center_y_cast
+
+
+ <State 4>: 5.23ns
+ST_4: A_load (172)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:9  %A_load = load i32* %A_addr, align 4
+
+ST_4: B_0_load (173)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:10  %B_0_load = load i32* %B_0_addr, align 4
+
+ST_4: tmp_4 (174)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:11  %tmp_4 = mul nsw i32 %B_0_load, %A_load
+
+ST_4: A_load_1 (179)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:16  %A_load_1 = load i32* %A_addr_1, align 4
+
+ST_4: B_1_load (180)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:17  %B_1_load = load i32* %B_1_addr, align 4
+
+ST_4: tmp_18_0_0_1 (181)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:18  %tmp_18_0_0_1 = mul nsw i32 %B_1_load, %A_load_1
+
+ST_4: input_coords_0_0_2 (182)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:19  %input_coords_0_0_2 = add i17 %input_coords, 2
+
+ST_4: input_coords_0_0_2_c (183)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+:20  %input_coords_0_0_2_c = sext i17 %input_coords_0_0_2 to i32
+
+ST_4: tmp_16_0_0_2 (184)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:21  %tmp_16_0_0_2 = zext i32 %input_coords_0_0_2_c to i64
+
+ST_4: A_addr_2 (185)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:22  %A_addr_2 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_0_2
+
+ST_4: A_load_2 (186)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:23  %A_load_2 = load i32* %A_addr_2, align 4
+
+ST_4: B_2_load (187)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:24  %B_2_load = load i32* %B_2_addr, align 4
+
+ST_4: input_coords_0_1 (189)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:26  %input_coords_0_1 = add i17 %tmp_12_0_1, %center_y_cast1
+
+ST_4: input_coords_0_1_cas (190)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+:27  %input_coords_0_1_cas = sext i17 %input_coords_0_1 to i32
+
+ST_4: tmp_16_0_1 (191)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:28  %tmp_16_0_1 = zext i32 %input_coords_0_1_cas to i64
+
+ST_4: A_addr_3 (192)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:29  %A_addr_3 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_1
+
+ST_4: A_load_3 (193)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:30  %A_load_3 = load i32* %A_addr_3, align 4
+
+ST_4: B_3_load (194)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:31  %B_3_load = load i32* %B_3_addr, align 4
+
+ST_4: input_coords_0_2 (210)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:47  %input_coords_0_2 = add i17 %tmp_12_0_2, %center_y_cast1
+
+ST_4: input_coords_1 (231)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:68  %input_coords_1 = add i17 %tmp_12_1, %center_y_cast1
+
+ST_4: input_coords_1_1 (249)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:86  %input_coords_1_1 = add i17 %tmp_12_1_1, %center_y_cast1
+
+ST_4: input_coords_1_2 (267)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:104  %input_coords_1_2 = add i17 %tmp_12_1_2, %center_y_cast1
+
+
+ <State 5>: 6.44ns
+ST_5: A_load_2 (186)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:23  %A_load_2 = load i32* %A_addr_2, align 4
+
+ST_5: B_2_load (187)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:24  %B_2_load = load i32* %B_2_addr, align 4
+
+ST_5: tmp_18_0_0_2 (188)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:25  %tmp_18_0_0_2 = mul nsw i32 %B_2_load, %A_load_2
+
+ST_5: A_load_3 (193)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:30  %A_load_3 = load i32* %A_addr_3, align 4
+
+ST_5: B_3_load (194)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:31  %B_3_load = load i32* %B_3_addr, align 4
+
+ST_5: tmp_18_0_1 (195)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:32  %tmp_18_0_1 = mul nsw i32 %B_3_load, %A_load_3
+
+ST_5: input_coords_0_1_1 (196)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:33  %input_coords_0_1_1 = add i17 %input_coords_0_1, 1
+
+ST_5: input_coords_0_1_1_c (197)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+:34  %input_coords_0_1_1_c = sext i17 %input_coords_0_1_1 to i32
+
+ST_5: tmp_16_0_1_1 (198)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:35  %tmp_16_0_1_1 = zext i32 %input_coords_0_1_1_c to i64
+
+ST_5: A_addr_4 (199)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:36  %A_addr_4 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_1_1
+
+ST_5: A_load_4 (200)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:37  %A_load_4 = load i32* %A_addr_4, align 4
+
+ST_5: B_4_load (201)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:38  %B_4_load = load i32* %B_4_addr, align 4
+
+ST_5: input_coords_0_1_2 (203)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:40  %input_coords_0_1_2 = add i17 %input_coords_0_1, 2
+
+ST_5: input_coords_0_1_2_c (204)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+:41  %input_coords_0_1_2_c = sext i17 %input_coords_0_1_2 to i32
+
+ST_5: tmp_16_0_1_2 (205)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:42  %tmp_16_0_1_2 = zext i32 %input_coords_0_1_2_c to i64
+
+ST_5: A_addr_5 (206)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:43  %A_addr_5 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_1_2
+
+ST_5: A_load_5 (207)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:44  %A_load_5 = load i32* %A_addr_5, align 4
+
+ST_5: B_5_load (208)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:45  %B_5_load = load i32* %B_5_addr, align 4
+
+ST_5: tmp4 (339)  [1/1] 1.20ns  loc: maccell/src/macc_par_convs.cpp:62
+:176  %tmp4 = add i32 %tmp_4, %tmp_18_0_0_2
+
+
+ <State 6>: 6.57ns
+ST_6: A_load_4 (200)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:37  %A_load_4 = load i32* %A_addr_4, align 4
+
+ST_6: B_4_load (201)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:38  %B_4_load = load i32* %B_4_addr, align 4
+
+ST_6: tmp_18_0_1_1 (202)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:39  %tmp_18_0_1_1 = mul nsw i32 %B_4_load, %A_load_4
+
+ST_6: A_load_5 (207)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:44  %A_load_5 = load i32* %A_addr_5, align 4
+
+ST_6: B_5_load (208)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:45  %B_5_load = load i32* %B_5_addr, align 4
+
+ST_6: tmp_18_0_1_2 (209)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:46  %tmp_18_0_1_2 = mul nsw i32 %B_5_load, %A_load_5
+
+ST_6: input_coords_0_2_cas (211)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+:48  %input_coords_0_2_cas = sext i17 %input_coords_0_2 to i32
+
+ST_6: tmp_16_0_2 (212)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:49  %tmp_16_0_2 = zext i32 %input_coords_0_2_cas to i64
+
+ST_6: A_addr_6 (213)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:50  %A_addr_6 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_2
+
+ST_6: A_load_6 (214)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:51  %A_load_6 = load i32* %A_addr_6, align 4
+
+ST_6: B_6_load (215)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:52  %B_6_load = load i32* %B_6_addr, align 4
+
+ST_6: input_coords_0_2_1 (217)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:54  %input_coords_0_2_1 = add i17 %input_coords_0_2, 1
+
+ST_6: input_coords_0_2_1_c (218)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+:55  %input_coords_0_2_1_c = sext i17 %input_coords_0_2_1 to i32
+
+ST_6: tmp_16_0_2_1 (219)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:56  %tmp_16_0_2_1 = zext i32 %input_coords_0_2_1_c to i64
+
+ST_6: A_addr_7 (220)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:57  %A_addr_7 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_2_1
+
+ST_6: A_load_7 (221)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:58  %A_load_7 = load i32* %A_addr_7, align 4
+
+ST_6: B_7_load (222)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:59  %B_7_load = load i32* %B_7_addr, align 4
+
+ST_6: tmp3 (340)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:177  %tmp3 = add i32 %tmp4, %tmp_18_0_0_1
+
+ST_6: tmp6 (341)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:178  %tmp6 = add i32 %tmp_18_0_1_1, %tmp_18_0_1_2
+
+ST_6: tmp5 (342)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:179  %tmp5 = add i32 %tmp6, %tmp_18_0_1
+
+ST_6: tmp2 (343)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:180  %tmp2 = add i32 %tmp5, %tmp3
+
+
+ <State 7>: 5.23ns
+ST_7: A_load_6 (214)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:51  %A_load_6 = load i32* %A_addr_6, align 4
+
+ST_7: B_6_load (215)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:52  %B_6_load = load i32* %B_6_addr, align 4
+
+ST_7: tmp_18_0_2 (216)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:53  %tmp_18_0_2 = mul nsw i32 %B_6_load, %A_load_6
+
+ST_7: A_load_7 (221)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:58  %A_load_7 = load i32* %A_addr_7, align 4
+
+ST_7: B_7_load (222)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:59  %B_7_load = load i32* %B_7_addr, align 4
+
+ST_7: tmp_18_0_2_1 (223)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:60  %tmp_18_0_2_1 = mul nsw i32 %B_7_load, %A_load_7
+
+ST_7: input_coords_0_2_2 (224)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:61  %input_coords_0_2_2 = add i17 %input_coords_0_2, 2
+
+ST_7: input_coords_0_2_2_c (225)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:57
+:62  %input_coords_0_2_2_c = sext i17 %input_coords_0_2_2 to i32
+
+ST_7: tmp_16_0_2_2 (226)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:63  %tmp_16_0_2_2 = zext i32 %input_coords_0_2_2_c to i64
+
+ST_7: A_addr_8 (227)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:64  %A_addr_8 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_2_2
+
+ST_7: A_load_8 (228)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:65  %A_load_8 = load i32* %A_addr_8, align 4
+
+ST_7: B_8_load (229)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:66  %B_8_load = load i32* %B_8_addr, align 4
+
+ST_7: tmp_16_1 (232)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:69  %tmp_16_1 = zext i17 %input_coords_1 to i64
+
+ST_7: A_addr_9 (233)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:70  %A_addr_9 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1
+
+ST_7: A_load_9 (234)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:71  %A_load_9 = load i32* %A_addr_9, align 4
+
+ST_7: B_9_load (235)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:72  %B_9_load = load i32* %B_9_addr, align 4
+
+
+ <State 8>: 6.44ns
+ST_8: A_load_8 (228)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:65  %A_load_8 = load i32* %A_addr_8, align 4
+
+ST_8: B_8_load (229)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:66  %B_8_load = load i32* %B_8_addr, align 4
+
+ST_8: tmp_18_0_2_2 (230)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:67  %tmp_18_0_2_2 = mul nsw i32 %B_8_load, %A_load_8
+
+ST_8: A_load_9 (234)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:71  %A_load_9 = load i32* %A_addr_9, align 4
+
+ST_8: B_9_load (235)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:72  %B_9_load = load i32* %B_9_addr, align 4
+
+ST_8: tmp_18_1 (236)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:73  %tmp_18_1 = mul nsw i32 %B_9_load, %A_load_9
+
+ST_8: input_coords_1_0_1 (237)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:74  %input_coords_1_0_1 = add i17 %input_coords_1, 1
+
+ST_8: tmp_16_1_0_1 (238)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:75  %tmp_16_1_0_1 = zext i17 %input_coords_1_0_1 to i64
+
+ST_8: A_addr_10 (239)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:76  %A_addr_10 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_0_1
+
+ST_8: A_load_10 (240)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:77  %A_load_10 = load i32* %A_addr_10, align 4
+
+ST_8: B_10_load (241)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:78  %B_10_load = load i32* %B_10_addr, align 4
+
+ST_8: input_coords_1_0_2 (243)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:80  %input_coords_1_0_2 = add i17 %input_coords_1, 2
+
+ST_8: tmp_16_1_0_2 (244)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:81  %tmp_16_1_0_2 = zext i17 %input_coords_1_0_2 to i64
+
+ST_8: A_addr_11 (245)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:82  %A_addr_11 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_0_2
+
+ST_8: A_load_11 (246)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:83  %A_load_11 = load i32* %A_addr_11, align 4
+
+ST_8: B_11_load (247)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:84  %B_11_load = load i32* %B_11_addr, align 4
+
+ST_8: tmp9 (344)  [1/1] 1.20ns  loc: maccell/src/macc_par_convs.cpp:62
+:181  %tmp9 = add i32 %tmp_18_0_2_1, %tmp_18_0_2_2
+
+
+ <State 9>: 5.23ns
+ST_9: A_load_10 (240)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:77  %A_load_10 = load i32* %A_addr_10, align 4
+
+ST_9: B_10_load (241)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:78  %B_10_load = load i32* %B_10_addr, align 4
+
+ST_9: tmp_18_1_0_1 (242)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:79  %tmp_18_1_0_1 = mul nsw i32 %B_10_load, %A_load_10
+
+ST_9: A_load_11 (246)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:83  %A_load_11 = load i32* %A_addr_11, align 4
+
+ST_9: B_11_load (247)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:84  %B_11_load = load i32* %B_11_addr, align 4
+
+ST_9: tmp_18_1_0_2 (248)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:85  %tmp_18_1_0_2 = mul nsw i32 %B_11_load, %A_load_11
+
+ST_9: tmp_16_1_1 (250)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:87  %tmp_16_1_1 = zext i17 %input_coords_1_1 to i64
+
+ST_9: A_addr_12 (251)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:88  %A_addr_12 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_1
+
+ST_9: A_load_12 (252)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:89  %A_load_12 = load i32* %A_addr_12, align 4
+
+ST_9: B_12_load (253)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:90  %B_12_load = load i32* %B_12_addr, align 4
+
+ST_9: input_coords_1_1_1 (255)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:92  %input_coords_1_1_1 = add i17 %input_coords_1_1, 1
+
+ST_9: tmp_16_1_1_1 (256)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:93  %tmp_16_1_1_1 = zext i17 %input_coords_1_1_1 to i64
+
+ST_9: A_addr_13 (257)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:94  %A_addr_13 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_1_1
+
+ST_9: A_load_13 (258)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:95  %A_load_13 = load i32* %A_addr_13, align 4
+
+ST_9: B_13_load (259)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:96  %B_13_load = load i32* %B_13_addr, align 4
+
+
+ <State 10>: 7.32ns
+ST_10: A_load_12 (252)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:89  %A_load_12 = load i32* %A_addr_12, align 4
+
+ST_10: B_12_load (253)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:90  %B_12_load = load i32* %B_12_addr, align 4
+
+ST_10: tmp_18_1_1 (254)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:91  %tmp_18_1_1 = mul nsw i32 %B_12_load, %A_load_12
+
+ST_10: A_load_13 (258)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:95  %A_load_13 = load i32* %A_addr_13, align 4
+
+ST_10: B_13_load (259)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:96  %B_13_load = load i32* %B_13_addr, align 4
+
+ST_10: tmp_18_1_1_1 (260)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:97  %tmp_18_1_1_1 = mul nsw i32 %B_13_load, %A_load_13
+
+ST_10: input_coords_1_1_2 (261)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:98  %input_coords_1_1_2 = add i17 %input_coords_1_1, 2
+
+ST_10: tmp_16_1_1_2 (262)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:99  %tmp_16_1_1_2 = zext i17 %input_coords_1_1_2 to i64
+
+ST_10: A_addr_14 (263)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:100  %A_addr_14 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_1_2
+
+ST_10: A_load_14 (264)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:101  %A_load_14 = load i32* %A_addr_14, align 4
+
+ST_10: B_14_load (265)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:102  %B_14_load = load i32* %B_14_addr, align 4
+
+ST_10: tmp_16_1_2 (268)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:105  %tmp_16_1_2 = zext i17 %input_coords_1_2 to i64
+
+ST_10: A_addr_15 (269)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:106  %A_addr_15 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_2
+
+ST_10: A_load_15 (270)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:107  %A_load_15 = load i32* %A_addr_15, align 4
+
+ST_10: B_15_load (271)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:108  %B_15_load = load i32* %B_15_addr, align 4
+
+ST_10: tmp8 (345)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:182  %tmp8 = add i32 %tmp9, %tmp_18_0_2
+
+ST_10: tmp (346)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:183  %tmp = add i32 %tmp_18_1, %tmp_18_1_0_1
+
+ST_10: tmp11 (347)  [1/1] 1.20ns  loc: maccell/src/macc_par_convs.cpp:62
+:184  %tmp11 = add i32 %tmp_18_1_0_2, %tmp_18_1_1
+
+ST_10: tmp10 (348)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:185  %tmp10 = add i32 %tmp11, %tmp
+
+ST_10: tmp7 (349)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:186  %tmp7 = add i32 %tmp10, %tmp8
+
+
+ <State 11>: 6.12ns
+ST_11: A_load_14 (264)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:101  %A_load_14 = load i32* %A_addr_14, align 4
+
+ST_11: B_14_load (265)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:102  %B_14_load = load i32* %B_14_addr, align 4
+
+ST_11: tmp_18_1_1_2 (266)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:103  %tmp_18_1_1_2 = mul nsw i32 %B_14_load, %A_load_14
+
+ST_11: A_load_15 (270)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:107  %A_load_15 = load i32* %A_addr_15, align 4
+
+ST_11: B_15_load (271)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:108  %B_15_load = load i32* %B_15_addr, align 4
+
+ST_11: tmp_18_1_2 (272)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:109  %tmp_18_1_2 = mul nsw i32 %B_15_load, %A_load_15
+
+ST_11: input_coords_1_2_1 (273)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:110  %input_coords_1_2_1 = add i17 %input_coords_1_2, 1
+
+ST_11: tmp_16_1_2_1 (274)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:111  %tmp_16_1_2_1 = zext i17 %input_coords_1_2_1 to i64
+
+ST_11: A_addr_16 (275)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:112  %A_addr_16 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_2_1
+
+ST_11: A_load_16 (276)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:113  %A_load_16 = load i32* %A_addr_16, align 4
+
+ST_11: B_16_load (277)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:114  %B_16_load = load i32* %B_16_addr, align 4
+
+ST_11: input_coords_1_2_2 (279)  [1/1] 1.03ns  loc: maccell/src/macc_par_convs.cpp:57
+:116  %input_coords_1_2_2 = add i17 %input_coords_1_2, 2
+
+ST_11: tmp_16_1_2_2 (280)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:117  %tmp_16_1_2_2 = zext i17 %input_coords_1_2_2 to i64
+
+ST_11: A_addr_17 (281)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:118  %A_addr_17 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_2_2
+
+ST_11: A_load_17 (282)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:119  %A_load_17 = load i32* %A_addr_17, align 4
+
+ST_11: B_17_load (283)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:120  %B_17_load = load i32* %B_17_addr, align 4
+
+ST_11: tmp12 (351)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:188  %tmp12 = add i32 %tmp_18_1_1_2, %tmp_18_1_2
+
+ST_11: tmp15 (352)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:189  %tmp15 = add i32 %tmp12, %tmp_18_1_1_1
+
+
+ <State 12>: 5.23ns
+ST_12: A_load_16 (276)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:113  %A_load_16 = load i32* %A_addr_16, align 4
+
+ST_12: B_16_load (277)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:114  %B_16_load = load i32* %B_16_addr, align 4
+
+ST_12: tmp_18_1_2_1 (278)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:115  %tmp_18_1_2_1 = mul nsw i32 %B_16_load, %A_load_16
+
+ST_12: A_load_17 (282)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:119  %A_load_17 = load i32* %A_addr_17, align 4
+
+ST_12: B_17_load (283)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:120  %B_17_load = load i32* %B_17_addr, align 4
+
+ST_12: tmp_18_1_2_2 (284)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:121  %tmp_18_1_2_2 = mul nsw i32 %B_17_load, %A_load_17
+
+ST_12: tmp_16_2 (286)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:123  %tmp_16_2 = zext i18 %input_coords_2 to i64
+
+ST_12: A_addr_18 (287)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:124  %A_addr_18 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2
+
+ST_12: A_load_18 (288)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:125  %A_load_18 = load i32* %A_addr_18, align 4
+
+ST_12: B_18_load (289)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:126  %B_18_load = load i32* %B_18_addr, align 4
+
+ST_12: input_coords_2_0_1 (291)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+:128  %input_coords_2_0_1 = add i18 %input_coords_2, 1
+
+ST_12: tmp_16_2_0_1 (292)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:129  %tmp_16_2_0_1 = zext i18 %input_coords_2_0_1 to i64
+
+ST_12: A_addr_19 (293)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:130  %A_addr_19 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_0_1
+
+ST_12: A_load_19 (294)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:131  %A_load_19 = load i32* %A_addr_19, align 4
+
+ST_12: B_19_load (295)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:132  %B_19_load = load i32* %B_19_addr, align 4
+
+
+ <State 13>: 6.88ns
+ST_13: A_load_18 (288)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:125  %A_load_18 = load i32* %A_addr_18, align 4
+
+ST_13: B_18_load (289)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:126  %B_18_load = load i32* %B_18_addr, align 4
+
+ST_13: tmp_18_2 (290)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:127  %tmp_18_2 = mul nsw i32 %B_18_load, %A_load_18
+
+ST_13: A_load_19 (294)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:131  %A_load_19 = load i32* %A_addr_19, align 4
+
+ST_13: B_19_load (295)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:132  %B_19_load = load i32* %B_19_addr, align 4
+
+ST_13: tmp_18_2_0_1 (296)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:133  %tmp_18_2_0_1 = mul nsw i32 %B_19_load, %A_load_19
+
+ST_13: input_coords_2_0_2 (297)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+:134  %input_coords_2_0_2 = add i18 %input_coords_2, 2
+
+ST_13: tmp_16_2_0_2 (298)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:135  %tmp_16_2_0_2 = zext i18 %input_coords_2_0_2 to i64
+
+ST_13: A_addr_20 (299)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:136  %A_addr_20 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_0_2
+
+ST_13: A_load_20 (300)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:137  %A_load_20 = load i32* %A_addr_20, align 4
+
+ST_13: B_20_load (301)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:138  %B_20_load = load i32* %B_20_addr, align 4
+
+ST_13: tmp_16_2_1 (304)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:141  %tmp_16_2_1 = zext i18 %input_coords_2_1 to i64
+
+ST_13: A_addr_21 (305)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:142  %A_addr_21 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_1
+
+ST_13: A_load_21 (306)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:143  %A_load_21 = load i32* %A_addr_21, align 4
+
+ST_13: B_21_load (307)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:144  %B_21_load = load i32* %B_21_addr, align 4
+
+ST_13: tmp16 (353)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:190  %tmp16 = add i32 %tmp_18_1_2_1, %tmp_18_1_2_2
+
+ST_13: tmp18 (354)  [1/1] 1.20ns  loc: maccell/src/macc_par_convs.cpp:62
+:191  %tmp18 = add i32 %tmp_18_2, %tmp_18_2_0_1
+
+ST_13: tmp17 (355)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:192  %tmp17 = add i32 %tmp18, %tmp16
+
+
+ <State 14>: 5.23ns
+ST_14: A_load_20 (300)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:137  %A_load_20 = load i32* %A_addr_20, align 4
+
+ST_14: B_20_load (301)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:138  %B_20_load = load i32* %B_20_addr, align 4
+
+ST_14: tmp_18_2_0_2 (302)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:139  %tmp_18_2_0_2 = mul nsw i32 %B_20_load, %A_load_20
+
+ST_14: A_load_21 (306)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:143  %A_load_21 = load i32* %A_addr_21, align 4
+
+ST_14: B_21_load (307)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:144  %B_21_load = load i32* %B_21_addr, align 4
+
+ST_14: tmp_18_2_1 (308)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:145  %tmp_18_2_1 = mul nsw i32 %B_21_load, %A_load_21
+
+ST_14: input_coords_2_1_1 (309)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+:146  %input_coords_2_1_1 = add i18 %input_coords_2_1, 1
+
+ST_14: tmp_16_2_1_1 (310)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:147  %tmp_16_2_1_1 = zext i18 %input_coords_2_1_1 to i64
+
+ST_14: A_addr_22 (311)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:148  %A_addr_22 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_1_1
+
+ST_14: A_load_22 (312)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:149  %A_load_22 = load i32* %A_addr_22, align 4
+
+ST_14: B_22_load (313)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:150  %B_22_load = load i32* %B_22_addr, align 4
+
+ST_14: input_coords_2_1_2 (315)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+:152  %input_coords_2_1_2 = add i18 %input_coords_2_1, 2
+
+ST_14: tmp_16_2_1_2 (316)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:153  %tmp_16_2_1_2 = zext i18 %input_coords_2_1_2 to i64
+
+ST_14: A_addr_23 (317)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:154  %A_addr_23 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_1_2
+
+ST_14: A_load_23 (318)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:155  %A_load_23 = load i32* %A_addr_23, align 4
+
+ST_14: B_23_load (319)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:156  %B_23_load = load i32* %B_23_addr, align 4
+
+
+ <State 15>: 6.44ns
+ST_15: A_load_22 (312)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:149  %A_load_22 = load i32* %A_addr_22, align 4
+
+ST_15: B_22_load (313)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:150  %B_22_load = load i32* %B_22_addr, align 4
+
+ST_15: tmp_18_2_1_1 (314)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:151  %tmp_18_2_1_1 = mul nsw i32 %B_22_load, %A_load_22
+
+ST_15: A_load_23 (318)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:155  %A_load_23 = load i32* %A_addr_23, align 4
+
+ST_15: B_23_load (319)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:156  %B_23_load = load i32* %B_23_addr, align 4
+
+ST_15: tmp_18_2_1_2 (320)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:157  %tmp_18_2_1_2 = mul nsw i32 %B_23_load, %A_load_23
+
+ST_15: tmp_16_2_2 (322)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:159  %tmp_16_2_2 = zext i18 %input_coords_2_2 to i64
+
+ST_15: A_addr_24 (323)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:160  %A_addr_24 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_2
+
+ST_15: A_load_24 (324)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:161  %A_load_24 = load i32* %A_addr_24, align 4
+
+ST_15: B_24_load (325)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:162  %B_24_load = load i32* %B_24_addr, align 4
+
+ST_15: input_coords_2_2_1 (327)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+:164  %input_coords_2_2_1 = add i18 %input_coords_2_2, 1
+
+ST_15: tmp_16_2_2_1 (328)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:165  %tmp_16_2_2_1 = zext i18 %input_coords_2_2_1 to i64
+
+ST_15: A_addr_25 (329)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:166  %A_addr_25 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_2_1
+
+ST_15: A_load_25 (330)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:167  %A_load_25 = load i32* %A_addr_25, align 4
+
+ST_15: B_25_load (331)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:168  %B_25_load = load i32* %B_25_addr, align 4
+
+ST_15: tmp19 (357)  [1/1] 1.20ns  loc: maccell/src/macc_par_convs.cpp:62
+:194  %tmp19 = add i32 %tmp_18_2_1, %tmp_18_2_1_1
+
+
+ <State 16>: 5.23ns
+ST_16: A_load_24 (324)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:161  %A_load_24 = load i32* %A_addr_24, align 4
+
+ST_16: B_24_load (325)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:162  %B_24_load = load i32* %B_24_addr, align 4
+
+ST_16: tmp_18_2_2 (326)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:163  %tmp_18_2_2 = mul nsw i32 %B_24_load, %A_load_24
+
+ST_16: A_load_25 (330)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:167  %A_load_25 = load i32* %A_addr_25, align 4
+
+ST_16: B_25_load (331)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:168  %B_25_load = load i32* %B_25_addr, align 4
+
+ST_16: tmp_18_2_2_1 (332)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:169  %tmp_18_2_2_1 = mul nsw i32 %B_25_load, %A_load_25
+
+ST_16: input_coords_2_2_2 (333)  [1/1] 1.04ns  loc: maccell/src/macc_par_convs.cpp:57
+:170  %input_coords_2_2_2 = add i18 %input_coords_2_2, 2
+
+ST_16: tmp_16_2_2_2 (334)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:171  %tmp_16_2_2_2 = zext i18 %input_coords_2_2_2 to i64
+
+ST_16: A_addr_26 (335)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:62
+:172  %A_addr_26 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_2_2
+
+ST_16: A_load_26 (336)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:173  %A_load_26 = load i32* %A_addr_26, align 4
+
+ST_16: B_26_load (337)  [2/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:174  %B_26_load = load i32* %B_26_addr, align 4
+
+
+ <State 17>: 8.21ns
+ST_17: A_load_26 (336)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:173  %A_load_26 = load i32* %A_addr_26, align 4
+
+ST_17: B_26_load (337)  [1/2] 1.35ns  loc: maccell/src/macc_par_convs.cpp:62
+:174  %B_26_load = load i32* %B_26_addr, align 4
+
+ST_17: tmp_18_2_2_2 (338)  [1/1] 3.88ns  loc: maccell/src/macc_par_convs.cpp:62
+:175  %tmp_18_2_2_2 = mul nsw i32 %B_26_load, %A_load_26
+
+ST_17: tmp1 (350)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:187  %tmp1 = add i32 %tmp7, %tmp2
+
+ST_17: tmp14 (356)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:193  %tmp14 = add i32 %tmp17, %tmp15
+
+ST_17: tmp21 (358)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:195  %tmp21 = add i32 %tmp19, %tmp_18_2_0_2
+
+ST_17: tmp22 (359)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:196  %tmp22 = add i32 %tmp_18_2_1_2, %tmp_18_2_2
+
+ST_17: tmp24 (360)  [1/1] 1.20ns  loc: maccell/src/macc_par_convs.cpp:62
+:197  %tmp24 = add i32 %tmp_18_2_2_1, %tmp_18_2_2_2
+
+ST_17: tmp23 (361)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:198  %tmp23 = add i32 %tmp24, %tmp22
+
+ST_17: tmp20 (362)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:199  %tmp20 = add i32 %tmp23, %tmp21
+
+ST_17: tmp13 (363)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:200  %tmp13 = add i32 %tmp20, %tmp14
+
+ST_17: result_3_2_2_2 (364)  [1/1] 0.44ns  loc: maccell/src/macc_par_convs.cpp:62
+:201  %result_3_2_2_2 = add nsw i32 %tmp13, %tmp1
+
+ST_17: StgValue_403 (365)  [2/2] 0.00ns  loc: maccell/src/macc_par_convs.cpp:68
+:202  call void @_ssdm_op_Write.axis.volatile.i32P(i32* %C, i32 %result_3_2_2_2)
+
+
+ <State 18>: 0.00ns
+ST_18: empty (165)  [1/1] 0.00ns
+:2  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 222, i64 222, i64 222) nounwind
+
+ST_18: tmp_2 (166)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:37
+:3  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str816) nounwind
+
+ST_18: StgValue_406 (167)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:38
+:4  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind
+
+ST_18: StgValue_407 (365)  [1/2] 0.00ns  loc: maccell/src/macc_par_convs.cpp:68
+:202  call void @_ssdm_op_Write.axis.volatile.i32P(i32* %C, i32 %result_3_2_2_2)
+
+ST_18: empty_2 (366)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:70
+:203  %empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str816, i32 %tmp_2) nounwind
+
+ST_18: StgValue_409 (367)  [1/1] 0.00ns  loc: maccell/src/macc_par_convs.cpp:36
+:204  br label %1
+
+
+ <State 19>: 0.00ns
+ST_19: StgValue_410 (369)  [1/1] 0.00ns
+.preheader.loopexit:0  br label %.preheader
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.755ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('indvar_flatten') with incoming values : ('indvar_flatten_next') [67]  (0.755 ns)
+
+ <State 2>: 3.38ns
+The critical path consists of the following:
+	'phi' operation ('center_x') with incoming values : ('center_x', maccell/src/macc_par_convs.cpp:57) [69]  (0 ns)
+	'icmp' operation ('tmp_3', maccell/src/macc_par_convs.cpp:31) [75]  (0.856 ns)
+	'select' operation ('center_x_mid2', maccell/src/macc_par_convs.cpp:31) [76]  (0.55 ns)
+	'add' operation ('tmp_11_2', maccell/src/macc_par_convs.cpp:57) [114]  (0.934 ns)
+	'sub' operation ('tmp_12_2', maccell/src/macc_par_convs.cpp:57) [118]  (1.04 ns)
+
+ <State 3>: 3.41ns
+The critical path consists of the following:
+	'phi' operation ('center_y') with incoming values : ('center_y', maccell/src/macc_par_convs.cpp:36) [158]  (0 ns)
+	'add' operation ('input_coords', maccell/src/macc_par_convs.cpp:57) [168]  (1.03 ns)
+	'add' operation ('input_coords_0_0_1', maccell/src/macc_par_convs.cpp:57) [175]  (1.03 ns)
+	'getelementptr' operation ('A_addr_1', maccell/src/macc_par_convs.cpp:62) [178]  (0 ns)
+	'load' operation ('A_load_1', maccell/src/macc_par_convs.cpp:62) on array 'A' [179]  (1.35 ns)
+
+ <State 4>: 5.23ns
+The critical path consists of the following:
+	'load' operation ('A_load', maccell/src/macc_par_convs.cpp:62) on array 'A' [172]  (1.35 ns)
+	'mul' operation ('tmp_4', maccell/src/macc_par_convs.cpp:62) [174]  (3.88 ns)
+
+ <State 5>: 6.44ns
+The critical path consists of the following:
+	'load' operation ('A_load_2', maccell/src/macc_par_convs.cpp:62) on array 'A' [186]  (1.35 ns)
+	'mul' operation ('tmp_18_0_0_2', maccell/src/macc_par_convs.cpp:62) [188]  (3.88 ns)
+	'add' operation ('tmp4', maccell/src/macc_par_convs.cpp:62) [339]  (1.2 ns)
+
+ <State 6>: 6.57ns
+The critical path consists of the following:
+	'load' operation ('A_load_4', maccell/src/macc_par_convs.cpp:62) on array 'A' [200]  (1.35 ns)
+	'mul' operation ('tmp_18_0_1_1', maccell/src/macc_par_convs.cpp:62) [202]  (3.88 ns)
+	'add' operation ('tmp6', maccell/src/macc_par_convs.cpp:62) [341]  (0.445 ns)
+	'add' operation ('tmp5', maccell/src/macc_par_convs.cpp:62) [342]  (0.445 ns)
+	'add' operation ('tmp2', maccell/src/macc_par_convs.cpp:62) [343]  (0.445 ns)
+
+ <State 7>: 5.23ns
+The critical path consists of the following:
+	'load' operation ('A_load_6', maccell/src/macc_par_convs.cpp:62) on array 'A' [214]  (1.35 ns)
+	'mul' operation ('tmp_18_0_2', maccell/src/macc_par_convs.cpp:62) [216]  (3.88 ns)
+
+ <State 8>: 6.44ns
+The critical path consists of the following:
+	'load' operation ('A_load_8', maccell/src/macc_par_convs.cpp:62) on array 'A' [228]  (1.35 ns)
+	'mul' operation ('tmp_18_0_2_2', maccell/src/macc_par_convs.cpp:62) [230]  (3.88 ns)
+	'add' operation ('tmp9', maccell/src/macc_par_convs.cpp:62) [344]  (1.2 ns)
+
+ <State 9>: 5.23ns
+The critical path consists of the following:
+	'load' operation ('A_load_10', maccell/src/macc_par_convs.cpp:62) on array 'A' [240]  (1.35 ns)
+	'mul' operation ('tmp_18_1_0_1', maccell/src/macc_par_convs.cpp:62) [242]  (3.88 ns)
+
+ <State 10>: 7.32ns
+The critical path consists of the following:
+	'load' operation ('A_load_12', maccell/src/macc_par_convs.cpp:62) on array 'A' [252]  (1.35 ns)
+	'mul' operation ('tmp_18_1_1', maccell/src/macc_par_convs.cpp:62) [254]  (3.88 ns)
+	'add' operation ('tmp11', maccell/src/macc_par_convs.cpp:62) [347]  (1.2 ns)
+	'add' operation ('tmp10', maccell/src/macc_par_convs.cpp:62) [348]  (0.445 ns)
+	'add' operation ('tmp7', maccell/src/macc_par_convs.cpp:62) [349]  (0.445 ns)
+
+ <State 11>: 6.12ns
+The critical path consists of the following:
+	'load' operation ('A_load_14', maccell/src/macc_par_convs.cpp:62) on array 'A' [264]  (1.35 ns)
+	'mul' operation ('tmp_18_1_1_2', maccell/src/macc_par_convs.cpp:62) [266]  (3.88 ns)
+	'add' operation ('tmp12', maccell/src/macc_par_convs.cpp:62) [351]  (0.445 ns)
+	'add' operation ('tmp15', maccell/src/macc_par_convs.cpp:62) [352]  (0.445 ns)
+
+ <State 12>: 5.23ns
+The critical path consists of the following:
+	'load' operation ('A_load_16', maccell/src/macc_par_convs.cpp:62) on array 'A' [276]  (1.35 ns)
+	'mul' operation ('tmp_18_1_2_1', maccell/src/macc_par_convs.cpp:62) [278]  (3.88 ns)
+
+ <State 13>: 6.88ns
+The critical path consists of the following:
+	'load' operation ('A_load_18', maccell/src/macc_par_convs.cpp:62) on array 'A' [288]  (1.35 ns)
+	'mul' operation ('tmp_18_2', maccell/src/macc_par_convs.cpp:62) [290]  (3.88 ns)
+	'add' operation ('tmp18', maccell/src/macc_par_convs.cpp:62) [354]  (1.2 ns)
+	'add' operation ('tmp17', maccell/src/macc_par_convs.cpp:62) [355]  (0.445 ns)
+
+ <State 14>: 5.23ns
+The critical path consists of the following:
+	'load' operation ('A_load_20', maccell/src/macc_par_convs.cpp:62) on array 'A' [300]  (1.35 ns)
+	'mul' operation ('tmp_18_2_0_2', maccell/src/macc_par_convs.cpp:62) [302]  (3.88 ns)
+
+ <State 15>: 6.44ns
+The critical path consists of the following:
+	'load' operation ('A_load_22', maccell/src/macc_par_convs.cpp:62) on array 'A' [312]  (1.35 ns)
+	'mul' operation ('tmp_18_2_1_1', maccell/src/macc_par_convs.cpp:62) [314]  (3.88 ns)
+	'add' operation ('tmp19', maccell/src/macc_par_convs.cpp:62) [357]  (1.2 ns)
+
+ <State 16>: 5.23ns
+The critical path consists of the following:
+	'load' operation ('A_load_24', maccell/src/macc_par_convs.cpp:62) on array 'A' [324]  (1.35 ns)
+	'mul' operation ('tmp_18_2_2', maccell/src/macc_par_convs.cpp:62) [326]  (3.88 ns)
+
+ <State 17>: 8.21ns
+The critical path consists of the following:
+	'load' operation ('A_load_26', maccell/src/macc_par_convs.cpp:62) on array 'A' [336]  (1.35 ns)
+	'mul' operation ('tmp_18_2_2_2', maccell/src/macc_par_convs.cpp:62) [338]  (3.88 ns)
+	'add' operation ('tmp24', maccell/src/macc_par_convs.cpp:62) [360]  (1.2 ns)
+	'add' operation ('tmp23', maccell/src/macc_par_convs.cpp:62) [361]  (0.445 ns)
+	'add' operation ('tmp20', maccell/src/macc_par_convs.cpp:62) [362]  (0.445 ns)
+	'add' operation ('tmp13', maccell/src/macc_par_convs.cpp:62) [363]  (0.445 ns)
+	'add' operation ('result_3_2_2_2', maccell/src/macc_par_convs.cpp:62) [364]  (0.445 ns)
+
+ <State 18>: 0ns
+The critical path consists of the following:
+
+ <State 19>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

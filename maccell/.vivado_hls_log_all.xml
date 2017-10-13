@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_26_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.209+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_26_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.195+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_25_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.189+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_25_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.182+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_24_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.177+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_24_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.172+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_23_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.167+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_23_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.163+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_22_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.158+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_22_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.152+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_21_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.147+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_21_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.139+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_20_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.133+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_20_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.129+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_19_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.124+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_19_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.119+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_18_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.115+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_18_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.111+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_17_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.107+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_17_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.101+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_16_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.097+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_16_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.093+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_15_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.089+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_15_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.084+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_14_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.080+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_14_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.076+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_13_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.069+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_13_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.065+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_12_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.062+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_12_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.058+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_11_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.054+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_11_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.051+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_10_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.047+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_10_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.044+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_9_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.032+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_9_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.027+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_8_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:48.015+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_8_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.997+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_7_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.993+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_7_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.989+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_6_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.981+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_6_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.978+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_5_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.974+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_5_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.967+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_4_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.963+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_4_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.953+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_3_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.949+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_3_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.945+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_2_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.942+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_2_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.939+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_1_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.936+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_1_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.912+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_0_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.900+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/B_0_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.880+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/A_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.873+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/A_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.863+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/A_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.768+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_par_convs/A_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.766+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('A_load_2', maccell/src/macc_par_convs.cpp:62) on array 'A' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'A'." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:47.362+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] the outer loop is not a perfect loop." projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:46.568+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.1' (maccell/src/macc_par_convs.cpp:31:27) in function 'macc_par_convs' : " projectName="maccell" solutionName="solution1" date="2017-10-13T14:57:46.559+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
