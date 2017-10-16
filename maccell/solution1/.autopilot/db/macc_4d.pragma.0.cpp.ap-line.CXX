@@ -575,5 +575,118 @@
 #pragma line 12 "maccell/src/macc_4d.cpp" 2 ::: 34168
 #pragma line 12 "maccell/src/macc_4d.cpp" ::: 34170
 #pragma line 1 "maccell/src/macc.h" 1 ::: 34173
-#pragma line 23 "maccell/src/macc.h" ::: 34186
-#pragma line 14 "maccell/src/macc_4d.cpp" 2 ::: 34215
+#pragma line 1 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int.h" 1 ::: 34185
+#pragma line 60 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int.h" ::: 34237
+#pragma line 1 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/hls_half.h" 1 ::: 34238
+#pragma line 32 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/hls_half.h" ::: 34259
+#pragma line 1 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 1 3 ::: 34260
+#pragma line 41 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 34302
+#pragma line 50 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 34303
+#pragma line 76 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 34305
+#pragma line 480 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 34697
+#pragma line 730 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 34700
+#pragma line 33 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/hls_half.h" 2 ::: 34814
+#pragma line 3272 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/hls_half.h" ::: 34837
+#pragma line 61 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int.h" 2 ::: 34914
+#pragma line 1 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" 1 ::: 34915
+#pragma line 73 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 34967
+#pragma line 1 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/clang/bin/../lib/clang/3.1/include/limits.h" 1 3 ::: 34968
+#pragma line 1 "/usr/include/limits.h" 1 3 4 ::: 35007
+#pragma line 116 "/usr/include/limits.h" 3 4 ::: 35043
+#pragma line 142 "/usr/include/limits.h" 3 4 ::: 35057
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4 ::: 35060
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 1 3 4 ::: 35221
+#pragma line 37 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 3 4 ::: 35245
+#pragma line 1 "/usr/include/linux/limits.h" 1 3 4 ::: 35248
+#pragma line 39 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 2 3 4 ::: 35249
+#pragma line 161 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 2 3 4 ::: 35310
+#pragma line 144 "/usr/include/limits.h" 2 3 4 ::: 35320
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/posix2_lim.h" 1 3 4 ::: 35324
+#pragma line 87 "/usr/include/x86_64-linux-gnu/bits/posix2_lim.h" 3 4 ::: 35385
+#pragma line 148 "/usr/include/limits.h" 2 3 4 ::: 35387
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 1 3 4 ::: 35391
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4 ::: 35425
+#pragma line 34 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4 ::: 35442
+#pragma line 119 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 3 4 ::: 35502
+#pragma line 131 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 3 4 ::: 35504
+#pragma line 152 "/usr/include/limits.h" 2 3 4 ::: 35506
+#pragma line 39 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/clang/bin/../lib/clang/3.1/include/limits.h" 2 3 ::: 35507
+#pragma line 60 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/clang/bin/../lib/clang/3.1/include/limits.h" 3 ::: 35512
+#pragma line 90 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/clang/bin/../lib/clang/3.1/include/limits.h" 3 ::: 35514
+#pragma line 102 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/clang/bin/../lib/clang/3.1/include/limits.h" 3 ::: 35516
+#pragma line 74 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" 2 ::: 35521
+#pragma line 111 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 35539
+#pragma line 129 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 35542
+#pragma line 147 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 35544
+#pragma line 184 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 35557
+#pragma line 1 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/etc/autopilot_dt.def" 1 ::: 35558
+#pragma line 185 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" 2 ::: 36597
+#pragma line 603 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 36598
+#pragma line 646 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 36600
+#pragma line 1 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/etc/autopilot_ssdm_bits.h" 1 ::: 36601
+#pragma line 98 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/etc/autopilot_ssdm_bits.h" ::: 36654
+#pragma line 108 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/etc/autopilot_ssdm_bits.h" ::: 36656
+#pragma line 129 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/etc/autopilot_ssdm_bits.h" ::: 36658
+#pragma line 143 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/etc/autopilot_ssdm_bits.h" ::: 36663
+#pragma line 156 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/etc/autopilot_ssdm_bits.h" ::: 36666
+#pragma line 192 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/etc/autopilot_ssdm_bits.h" ::: 36668
+#pragma line 358 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/etc/autopilot_ssdm_bits.h" ::: 36670
+#pragma line 647 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" 2 ::: 36672
+#pragma line 881 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 36898
+#pragma line 920 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 36927
+#pragma line 1567 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 37567
+#pragma line 1686 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 37674
+#pragma line 1820 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 37800
+#pragma line 2044 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 38009
+#pragma line 2107 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 38064
+#pragma line 2509 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 38459
+#pragma line 2628 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 38567
+#pragma line 2762 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 38693
+#pragma line 2991 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 38906
+#pragma line 3054 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 38961
+#pragma line 3368 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39250
+#pragma line 3403 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39272
+#pragma line 3428 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39278
+#pragma line 3462 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39291
+#pragma line 3498 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39309
+#pragma line 3534 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39327
+#pragma line 3574 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39345
+#pragma line 3628 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39363
+#pragma line 3684 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39392
+#pragma line 3731 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39421
+#pragma line 3798 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39469
+#pragma line 3823 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39487
+#pragma line 3848 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39505
+#pragma line 3893 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39537
+#pragma line 4048 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39551
+#pragma line 4074 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int_syn.h" ::: 39569
+#pragma line 62 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int.h" 2 ::: 39586
+#pragma line 1 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" 1 ::: 39587
+#pragma line 62 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 39640
+#pragma line 81 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 39644
+#pragma line 1322 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 40876
+#pragma line 1406 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 40947
+#pragma line 1424 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 40957
+#pragma line 1555 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41051
+#pragma line 1600 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41070
+#pragma line 1658 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41091
+#pragma line 1690 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41109
+#pragma line 1759 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41148
+#pragma line 1773 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41151
+#pragma line 1808 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41166
+#pragma line 1820 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41168
+#pragma line 1868 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41187
+#pragma line 1882 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41190
+#pragma line 1912 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41205
+#pragma line 1959 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41239
+#pragma line 2232 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41503
+#pragma line 2350 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41553
+#pragma line 2400 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41571
+#pragma line 2485 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41626
+#pragma line 2525 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed_syn.h" ::: 41644
+#pragma line 63 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_int.h" 2 ::: 41659
+#pragma line 12 "maccell/src/macc.h" 2 ::: 42133
+#pragma line 1 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed.h" 1 ::: 42134
+#pragma line 13 "maccell/src/macc.h" 2 ::: 42139
+#pragma line 26 "maccell/src/macc.h" ::: 42143
+#pragma line 14 "maccell/src/macc_4d.cpp" 2 ::: 42174

@@ -8,6 +8,9 @@
 #ifndef SRC_MACC_H_
 #define SRC_MACC_H_
 
+#include <ap_int.h>
+#include <ap_fixed.h>
+
 
 //#define STREAM_OUTPUT
 
@@ -17,8 +20,8 @@
 #define BATCH 1
 
 #define INPUT_C 3
-#define INPUT_W 224
-#define INPUT_H 224
+#define INPUT_W 9
+#define INPUT_H 9
 #define INPUT_SIZE BATCH*INPUT_C*INPUT_W*INPUT_H
 //#define INPUT_SIZE 150528 // 1 * 3 * 224 * 224
 
@@ -35,6 +38,8 @@
 
 //typedef float data_t; // THIS WILL NOT PROVOKE EXPRESSION BALANCING
 typedef int data_t;
+//typedef ap_int<4> data_t;
+//typedef ap_fixed<8, 4> data_t;
 typedef unsigned int uint;
 
 

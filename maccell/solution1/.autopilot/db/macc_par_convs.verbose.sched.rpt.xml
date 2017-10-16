@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'macc_par_convs'" level="0">
-<item name = "Date">Mon Oct 16 17:29:10 2017
+<item name = "Date">Mon Oct 16 18:03:41 2017
 </item>
 <item name = "Version">2017.2 (Build 1909853 on Wed Aug 23 11:51:38 MDT 2017)</item>
 <item name = "Project">maccell</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.36, 1.25</column>
+<column name="ap_clk">10.00, 6.41, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">22107649, 22107649, 22107650, 22107650, none</column>
+<column name="">22079899, 22079899, 22079900, 22079900, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">22107648, 22107648, 3112, -, -, 7104, no</column>
-<column name=" + Loop 1.1">3109, 3109, 16, 14, 1, 222, yes</column>
+<column name="- Loop 1">22079898, 22079898, 99459, -, -, 222, no</column>
+<column name=" + Loop 1.1">99456, 99456, 15, 14, 1, 7104, yes</column>
 </table>
 </item>
 </section>
