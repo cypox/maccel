@@ -218,7 +218,13 @@ extern "C" {
  *  Created on: Oct 4, 2017
  *      Author: cypox
  */
-# 20 "maccell/src/macc.h"
+
+
+
+
+
+//#define STREAM_OUTPUT
+# 23 "maccell/src/macc.h"
 //#define INPUT_SIZE 150528 // 1 * 3 * 224 * 224
 
 

@@ -34168,7 +34168,13 @@ extern int matherr (struct __exception *__exc) throw ();
  *  Created on: Oct 4, 2017
  *      Author: cypox
  */
-# 20 "maccell/src/macc.h"
+
+
+
+
+
+//#define STREAM_OUTPUT
+# 23 "maccell/src/macc.h"
 //#define INPUT_SIZE 150528 // 1 * 3 * 224 * 224
 
 
@@ -34202,16 +34208,24 @@ void print_python(const data_t V[], uint number, uint channels, uint size);
 
 void macc_4d(const data_t A[1][3][224][224], const data_t B[32][3][3][3], data_t C[1][32][((224 + 2 * 0 - 3 ) / 1 + 1)][((224 + 2 * 0 - 3 ) / 1 + 1)])
 {
+#pragma HLS interface bram port=A
+#pragma HLS interface bram port=B
+#pragma HLS interface bram port=C
+#pragma HLS interface s_axilite port=return bundle=CTRL_BUS
+
+#pragma HLS array_partition variable=A cyclic factor=3 dim=3
+#pragma HLS array_partition variable=B cyclic factor=3 dim=2
  for ( uint center_x = 0 ; center_x < ((224 + 2 * 0 - 3 ) / 1 + 1) ; ++ center_x )
  {
   for ( uint center_y = 0 ; center_y < ((224 + 2 * 0 - 3 ) / 1 + 1) ; ++ center_y )
   {
    for ( uint channel_out = 0 ; channel_out < 32 ; ++ channel_out )
    {
-    data_t result = 0;
+#pragma HLS PIPELINE
+ data_t result = 0;
     for ( uint channel_in = 0 ; channel_in < 3 ; ++ channel_in )
     {
-#pragma HLS PIPELINE
+#pragma HLS UNROLL
  for ( uint i = 0 ; i < 3 ; ++ i )
      {
 #pragma HLS UNROLL

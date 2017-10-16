@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'macc_par_convs'" level="0">
-<item name = "Date">Fri Oct 13 14:57:47 2017
+<item name = "Date">Mon Oct 16 17:29:10 2017
 </item>
 <item name = "Version">2017.2 (Build 1909853 on Wed Aug 23 11:51:38 MDT 2017)</item>
 <item name = "Project">maccell</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.21, 1.25</column>
+<column name="ap_clk">10.00, 8.36, 1.25</column>
 </table>
 </item>
 </section>

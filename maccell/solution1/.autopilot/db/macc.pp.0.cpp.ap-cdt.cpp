@@ -218,7 +218,13 @@ extern "C" {
  *  Created on: Oct 4, 2017
  *      Author: cypox
  */
-#pragma line 20 "maccell/src/macc.h"
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+//#define STREAM_OUTPUT
+#pragma line 23 "maccell/src/macc.h"
 //#define INPUT_SIZE 150528 // 1 * 3 * 224 * 224
 #pragma empty_line
 #pragma empty_line

@@ -34188,7 +34188,13 @@ extern int matherr (struct __exception *__exc) throw ();
  *  Created on: Oct 4, 2017
  *      Author: cypox
  */
-#20 "maccell/src/macc.h"
+
+
+
+
+
+//#define STREAM_OUTPUT
+#23 "maccell/src/macc.h"
 //#define INPUT_SIZE 150528 // 1 * 3 * 224 * 224
 
 
@@ -34224,32 +34230,47 @@ void macc_par_convs(const data_t A[1*3*224*224], const data_t B[32*3*3*3], data_
 {_ssdm_SpecArrayDimSize(A,1*3*224*224);_ssdm_SpecArrayDimSize(B,32*3*3*3);_ssdm_SpecArrayDimSize(C,1*32*((224 + 2 * 0 - 3 ) / 1 + 1)*((224 + 2 * 0 - 3 ) / 1 + 1));
 _ssdm_op_SpecInterface(A, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(B, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(C, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(C, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 
-//#pragma HLS RESOURCE variable=A core=RAM_2P_BRAM
-_ssdm_op_SpecResource(B, "", "RAM_T2P_BRAM", "", -1, "", "", "", "", "");
-//#pragma HLS array_partition variable=A block factor=9
-//#pragma HLS array_partition variable=B cyclic factor=9
 _ssdm_SpecArrayPartition( B, 1, "CYCLIC", 27, "");
 
+ uint out_size = ((224 + 2 * 0 - 3 ) / 1 + 1) * ((224 + 2 * 0 - 3 ) / 1 + 1);
  for ( uint channel_out = 0 ; channel_out < 32 ; ++ channel_out )
  {
   for ( uint center_x = 0 ; center_x < ((224 + 2 * 0 - 3 ) / 1 + 1) ; ++ center_x )
   {
-   uint output_x_coords;
-   // OUTPUT[0][channel_out][center_x][center_y]
-   output_x_coords = (0 * 32 + channel_out) * ((224 + 2 * 0 - 3 ) / 1 + 1) + center_x;
+   uint shift_x, shift_y;
+   shift_x = 1 * center_x - 0;
+   uint output_x_coords = center_x * ((224 + 2 * 0 - 3 ) / 1 + 1);
    for ( uint center_y = 0 ; center_y < ((224 + 2 * 0 - 3 ) / 1 + 1) ; ++ center_y )
    {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- data_t result = 0;
-    uint output_coords = output_x_coords * ((224 + 2 * 0 - 3 ) / 1 + 1) + center_y;
+ uint output_xy_coords = output_x_coords + center_y;
+    shift_y = 1 * center_y - 0;
+
+    data_t result = 0;
+    // OUTPUT[0][channel_out][center_x][center_y]
+    uint output_coords = channel_out * out_size + output_xy_coords;
+    uint weight_channel_start = channel_out * 3;
 
     for ( uint channel_in = 0 ; channel_in < 3 ; ++ channel_in )
     {
+//#pragma HLS PIPELINE
 _ssdm_Unroll(0,0,0, "");
- for ( uint i = 0 ; i < 3 ; ++ i )
+ //data_t cache_input[27];
+     //for ( uint i = 0 ; i < 3 ; ++ i )
+     //for ( uint j = 0 ; j < 3 ; ++ j )
+     //{
+     // INPUT[0][channel_in][input_x][input_y]
+     //uint input_x, input_y;
+     //input_x = shift_x + i;
+     //input_y = shift_y + j;
+     //cache_input[channel_in*3*3+i*3+j] = A[((0 * INPUT_C + channel_in ) * INPUT_H + input_x ) * INPUT_W + input_y];
+     //std::cout << ((0 * INPUT_C + channel_in ) * INPUT_H + input_x ) * INPUT_W + input_y << std::endl;
+     //}
+
+     for ( uint i = 0 ; i < 3 ; ++ i )
      {
 _ssdm_Unroll(0,0,0, "");
  for ( uint j = 0 ; j < 3 ; ++ j )
@@ -34259,14 +34280,16 @@ _ssdm_Unroll(0,0,0, "");
 
        // INPUT[0][channel_in][input_x][input_y]
        uint input_x, input_y;
-       input_x = 1 * center_x + i - 0;
-       input_y = 1 * center_y + j - 0;
+       input_x = shift_x + i;
+       input_y = shift_y + j;
        input_coords = ((0 * 3 + channel_in ) * 224 + input_x ) * 224 + input_y;
+       //std::cout << i*3+j << "\t" << input_coords << std::endl;
 
        // WEIGHT[channel_out][channel_in][i][j]
-       weight_coords = ((channel_out * 3 + channel_in ) * 3 + i ) * 3 + j;
+       weight_coords = ((weight_channel_start + channel_in ) * 3 + i ) * 3 + j;
 
        result += A[input_coords] * B[weight_coords];
+       //result += cache_input[channel_in*9+i*3+j] * B[weight_coords];
        //std::cout << "input_coords :\t" << input_coords << "\t\tweight_coords :\t" << weight_coords << std::endl;
        //std::cout << input_coords << "," << weight_coords << std::endl;
       }

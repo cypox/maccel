@@ -3,18 +3,15 @@ target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f3
 target triple = "x86_64-unknown-linux-gnu"
 
 @macc_par_convs_str = internal unnamed_addr constant [15 x i8] c"macc_par_convs\00"
-@llvm_global_ctors_1 = appending global [6 x void ()*] [void ()* @_GLOBAL__I_a, void ()* @_GLOBAL__I_a5, void ()* @_GLOBAL__I_a20, void ()* @_GLOBAL__I_a29, void ()* @_GLOBAL__I_a34, void ()* @_GLOBAL__I_a43]
+@llvm_global_ctors_1 = appending global [6 x void ()*] [void ()* @_GLOBAL__I_a, void ()* @_GLOBAL__I_a5, void ()* @_GLOBAL__I_a20, void ()* @_GLOBAL__I_a29, void ()* @_GLOBAL__I_a34, void ()* @_GLOBAL__I_a48]
 @llvm_global_ctors_0 = appending global [6 x i32] [i32 65535, i32 65535, i32 65535, i32 65535, i32 65535, i32 65535]
-@p_str816 = private unnamed_addr constant [12 x i8] c"hls_label_3\00", align 1
 @p_str8 = private unnamed_addr constant [5 x i8] c"bram\00", align 1
-@p_str614 = private unnamed_addr constant [13 x i8] c"RAM_T2P_BRAM\00", align 1
-@p_str513 = private unnamed_addr constant [9 x i8] c"CTRL_BUS\00", align 1
-@p_str412 = private unnamed_addr constant [10 x i8] c"s_axilite\00", align 1
-@p_str311 = private unnamed_addr constant [5 x i8] c"both\00", align 1
-@p_str210 = private unnamed_addr constant [5 x i8] c"axis\00", align 1
+@p_str513 = private unnamed_addr constant [12 x i8] c"hls_label_3\00", align 1
+@p_str311 = private unnamed_addr constant [9 x i8] c"CTRL_BUS\00", align 1
+@p_str210 = private unnamed_addr constant [10 x i8] c"s_axilite\00", align 1
 @p_str19 = private unnamed_addr constant [1 x i8] zeroinitializer, align 1
 
-define void @macc_par_convs([150528 x i32]* %A, [32 x i32]* %B_0, [32 x i32]* %B_1, [32 x i32]* %B_2, [32 x i32]* %B_3, [32 x i32]* %B_4, [32 x i32]* %B_5, [32 x i32]* %B_6, [32 x i32]* %B_7, [32 x i32]* %B_8, [32 x i32]* %B_9, [32 x i32]* %B_10, [32 x i32]* %B_11, [32 x i32]* %B_12, [32 x i32]* %B_13, [32 x i32]* %B_14, [32 x i32]* %B_15, [32 x i32]* %B_16, [32 x i32]* %B_17, [32 x i32]* %B_18, [32 x i32]* %B_19, [32 x i32]* %B_20, [32 x i32]* %B_21, [32 x i32]* %B_22, [32 x i32]* %B_23, [32 x i32]* %B_24, [32 x i32]* %B_25, [32 x i32]* %B_26, i32* %C) {
+define void @macc_par_convs([150528 x i32]* %A, [32 x i32]* %B_0, [32 x i32]* %B_1, [32 x i32]* %B_2, [32 x i32]* %B_3, [32 x i32]* %B_4, [32 x i32]* %B_5, [32 x i32]* %B_6, [32 x i32]* %B_7, [32 x i32]* %B_8, [32 x i32]* %B_9, [32 x i32]* %B_10, [32 x i32]* %B_11, [32 x i32]* %B_12, [32 x i32]* %B_13, [32 x i32]* %B_14, [32 x i32]* %B_15, [32 x i32]* %B_16, [32 x i32]* %B_17, [32 x i32]* %B_18, [32 x i32]* %B_19, [32 x i32]* %B_20, [32 x i32]* %B_21, [32 x i32]* %B_22, [32 x i32]* %B_23, [32 x i32]* %B_24, [32 x i32]* %B_25, [32 x i32]* %B_26, [1577088 x i32]* %C) {
   call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_26), !map !22
   call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_25), !map !28
   call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_24), !map !34
@@ -43,13 +40,12 @@ define void @macc_par_convs([150528 x i32]* %A, [32 x i32]* %B_0, [32 x i32]* %B
   call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_1), !map !172
   call void (...)* @_ssdm_op_SpecBitsMap([32 x i32]* %B_0), !map !178
   call void (...)* @_ssdm_op_SpecBitsMap([150528 x i32]* %A) nounwind, !map !184
-  call void (...)* @_ssdm_op_SpecBitsMap(i32* %C), !map !190
+  call void (...)* @_ssdm_op_SpecBitsMap([1577088 x i32]* %C) nounwind, !map !190
   call void (...)* @_ssdm_op_SpecTopModule([15 x i8]* @macc_par_convs_str) nounwind
   call void (...)* @_ssdm_op_SpecInterface([150528 x i32]* %A, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind
   call void (...)* @_ssdm_op_SpecInterface([32 x i32]* %B_0, [32 x i32]* %B_1, [32 x i32]* %B_2, [32 x i32]* %B_3, [32 x i32]* %B_4, [32 x i32]* %B_5, [32 x i32]* %B_6, [32 x i32]* %B_7, [32 x i32]* %B_8, [32 x i32]* %B_9, [32 x i32]* %B_10, [32 x i32]* %B_11, [32 x i32]* %B_12, [32 x i32]* %B_13, [32 x i32]* %B_14, [32 x i32]* %B_15, [32 x i32]* %B_16, [32 x i32]* %B_17, [32 x i32]* %B_18, [32 x i32]* %B_19, [32 x i32]* %B_20, [32 x i32]* %B_21, [32 x i32]* %B_22, [32 x i32]* %B_23, [32 x i32]* %B_24, [32 x i32]* %B_25, [32 x i32]* %B_26, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind
-  call void (...)* @_ssdm_op_SpecInterface(i32* %C, [5 x i8]* @p_str210, i32 1, i32 1, [5 x i8]* @p_str311, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19)
-  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str412, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [9 x i8]* @p_str513, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind
-  call void (...)* @_ssdm_op_SpecMemCore([32 x i32]* %B_0, [32 x i32]* %B_1, [32 x i32]* %B_2, [32 x i32]* %B_3, [32 x i32]* %B_4, [32 x i32]* %B_5, [32 x i32]* %B_6, [32 x i32]* %B_7, [32 x i32]* %B_8, [32 x i32]* %B_9, [32 x i32]* %B_10, [32 x i32]* %B_11, [32 x i32]* %B_12, [32 x i32]* %B_13, [32 x i32]* %B_14, [32 x i32]* %B_15, [32 x i32]* %B_16, [32 x i32]* %B_17, [32 x i32]* %B_18, [32 x i32]* %B_19, [32 x i32]* %B_20, [32 x i32]* %B_21, [32 x i32]* %B_22, [32 x i32]* %B_23, [32 x i32]* %B_24, [32 x i32]* %B_25, [32 x i32]* %B_26, [1 x i8]* @p_str19, [13 x i8]* @p_str614, [1 x i8]* @p_str19, i32 -1, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19)
+  call void (...)* @_ssdm_op_SpecInterface([1577088 x i32]* %C, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind
+  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str210, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [9 x i8]* @p_str311, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind
   br label %.preheader
 
 .preheader.loopexit:                              ; preds = %1
@@ -57,281 +53,291 @@ define void @macc_par_convs([150528 x i32]* %A, [32 x i32]* %B_0, [32 x i32]* %B
 
 .preheader:                                       ; preds = %.preheader.loopexit, %0
   %indvar_flatten = phi i13 [ 0, %0 ], [ %indvar_flatten_next, %.preheader.loopexit ]
-  %channel_out = phi i6 [ 0, %0 ], [ %channel_out2_mid2_v, %.preheader.loopexit ]
-  %center_x = phi i8 [ 0, %0 ], [ %center_x_1, %.preheader.loopexit ]
+  %channel_out = phi i6 [ 0, %0 ], [ %tmp_1_mid2_v_v, %.preheader.loopexit ]
+  %shift_x = phi i8 [ 0, %0 ], [ %center_x, %.preheader.loopexit ]
   %exitcond_flatten = icmp eq i13 %indvar_flatten, -1088
   %indvar_flatten_next = add i13 %indvar_flatten, 1
   br i1 %exitcond_flatten, label %3, label %.preheader.preheader
 
 ; <label>:1                                       ; preds = %2, %.preheader.preheader
-  %center_y = phi i8 [ %center_y_1, %2 ], [ 0, %.preheader.preheader ]
-  %tmp_6 = icmp eq i8 %center_y, -34
-  %center_y_1 = add i8 %center_y, 1
-  br i1 %tmp_6, label %.preheader.loopexit, label %2
+  %shift_y = phi i8 [ 0, %.preheader.preheader ], [ %center_y, %2 ]
+  %tmp_4 = icmp eq i8 %shift_y, -34
+  %center_y = add i8 %shift_y, 1
+  br i1 %tmp_4, label %.preheader.loopexit, label %2
 
 ; <label>:2                                       ; preds = %1
-  %center_y_cast = zext i8 %center_y to i18
-  %center_y_cast1 = zext i8 %center_y to i17
+  %shift_y_cast = zext i8 %shift_y to i18
+  %shift_y_cast1 = zext i8 %shift_y to i17
+  %shift_y_cast2 = zext i8 %shift_y to i21
   %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 222, i64 222, i64 222) nounwind
-  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str816) nounwind
+  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str513) nounwind
   call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind
-  %input_coords = add i17 %tmp_s, %center_y_cast1
+  %tmp1 = add i21 %tmp_1_mid2, %shift_y_cast2
+  %output_coords = add i21 %tmp1, %output_x_coords_cast
+  %input_coords = add i17 %tmp_s, %shift_y_cast1
   %input_coords_0_cast = sext i17 %input_coords to i32
   %tmp_1 = zext i32 %input_coords_0_cast to i64
   %A_addr = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_1
   %A_load = load i32* %A_addr, align 4
   %B_0_load = load i32* %B_0_addr, align 4
-  %tmp_4 = mul nsw i32 %B_0_load, %A_load
+  %tmp_5 = mul nsw i32 %B_0_load, %A_load
   %input_coords_0_0_1 = add i17 %input_coords, 1
   %input_coords_0_0_1_c = sext i17 %input_coords_0_0_1 to i32
-  %tmp_16_0_0_1 = zext i32 %input_coords_0_0_1_c to i64
-  %A_addr_1 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_0_1
+  %tmp_14_0_0_1 = zext i32 %input_coords_0_0_1_c to i64
+  %A_addr_1 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_0_0_1
   %A_load_1 = load i32* %A_addr_1, align 4
   %B_1_load = load i32* %B_1_addr, align 4
-  %tmp_18_0_0_1 = mul nsw i32 %B_1_load, %A_load_1
+  %tmp_16_0_0_1 = mul nsw i32 %B_1_load, %A_load_1
   %input_coords_0_0_2 = add i17 %input_coords, 2
   %input_coords_0_0_2_c = sext i17 %input_coords_0_0_2 to i32
-  %tmp_16_0_0_2 = zext i32 %input_coords_0_0_2_c to i64
-  %A_addr_2 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_0_2
+  %tmp_14_0_0_2 = zext i32 %input_coords_0_0_2_c to i64
+  %A_addr_2 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_0_0_2
   %A_load_2 = load i32* %A_addr_2, align 4
   %B_2_load = load i32* %B_2_addr, align 4
-  %tmp_18_0_0_2 = mul nsw i32 %B_2_load, %A_load_2
-  %input_coords_0_1 = add i17 %tmp_12_0_1, %center_y_cast1
+  %tmp_16_0_0_2 = mul nsw i32 %B_2_load, %A_load_2
+  %input_coords_0_1 = add i17 %tmp_10_0_1, %shift_y_cast1
   %input_coords_0_1_cas = sext i17 %input_coords_0_1 to i32
-  %tmp_16_0_1 = zext i32 %input_coords_0_1_cas to i64
-  %A_addr_3 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_1
+  %tmp_14_0_1 = zext i32 %input_coords_0_1_cas to i64
+  %A_addr_3 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_0_1
   %A_load_3 = load i32* %A_addr_3, align 4
   %B_3_load = load i32* %B_3_addr, align 4
-  %tmp_18_0_1 = mul nsw i32 %B_3_load, %A_load_3
+  %tmp_16_0_1 = mul nsw i32 %B_3_load, %A_load_3
   %input_coords_0_1_1 = add i17 %input_coords_0_1, 1
   %input_coords_0_1_1_c = sext i17 %input_coords_0_1_1 to i32
-  %tmp_16_0_1_1 = zext i32 %input_coords_0_1_1_c to i64
-  %A_addr_4 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_1_1
+  %tmp_14_0_1_1 = zext i32 %input_coords_0_1_1_c to i64
+  %A_addr_4 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_0_1_1
   %A_load_4 = load i32* %A_addr_4, align 4
   %B_4_load = load i32* %B_4_addr, align 4
-  %tmp_18_0_1_1 = mul nsw i32 %B_4_load, %A_load_4
+  %tmp_16_0_1_1 = mul nsw i32 %B_4_load, %A_load_4
   %input_coords_0_1_2 = add i17 %input_coords_0_1, 2
   %input_coords_0_1_2_c = sext i17 %input_coords_0_1_2 to i32
-  %tmp_16_0_1_2 = zext i32 %input_coords_0_1_2_c to i64
-  %A_addr_5 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_1_2
+  %tmp_14_0_1_2 = zext i32 %input_coords_0_1_2_c to i64
+  %A_addr_5 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_0_1_2
   %A_load_5 = load i32* %A_addr_5, align 4
   %B_5_load = load i32* %B_5_addr, align 4
-  %tmp_18_0_1_2 = mul nsw i32 %B_5_load, %A_load_5
-  %input_coords_0_2 = add i17 %tmp_12_0_2, %center_y_cast1
+  %tmp_16_0_1_2 = mul nsw i32 %B_5_load, %A_load_5
+  %input_coords_0_2 = add i17 %tmp_10_0_2, %shift_y_cast1
   %input_coords_0_2_cas = sext i17 %input_coords_0_2 to i32
-  %tmp_16_0_2 = zext i32 %input_coords_0_2_cas to i64
-  %A_addr_6 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_2
+  %tmp_14_0_2 = zext i32 %input_coords_0_2_cas to i64
+  %A_addr_6 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_0_2
   %A_load_6 = load i32* %A_addr_6, align 4
   %B_6_load = load i32* %B_6_addr, align 4
-  %tmp_18_0_2 = mul nsw i32 %B_6_load, %A_load_6
+  %tmp_16_0_2 = mul nsw i32 %B_6_load, %A_load_6
   %input_coords_0_2_1 = add i17 %input_coords_0_2, 1
   %input_coords_0_2_1_c = sext i17 %input_coords_0_2_1 to i32
-  %tmp_16_0_2_1 = zext i32 %input_coords_0_2_1_c to i64
-  %A_addr_7 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_2_1
+  %tmp_14_0_2_1 = zext i32 %input_coords_0_2_1_c to i64
+  %A_addr_7 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_0_2_1
   %A_load_7 = load i32* %A_addr_7, align 4
   %B_7_load = load i32* %B_7_addr, align 4
-  %tmp_18_0_2_1 = mul nsw i32 %B_7_load, %A_load_7
+  %tmp_16_0_2_1 = mul nsw i32 %B_7_load, %A_load_7
   %input_coords_0_2_2 = add i17 %input_coords_0_2, 2
   %input_coords_0_2_2_c = sext i17 %input_coords_0_2_2 to i32
-  %tmp_16_0_2_2 = zext i32 %input_coords_0_2_2_c to i64
-  %A_addr_8 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_0_2_2
+  %tmp_14_0_2_2 = zext i32 %input_coords_0_2_2_c to i64
+  %A_addr_8 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_0_2_2
   %A_load_8 = load i32* %A_addr_8, align 4
   %B_8_load = load i32* %B_8_addr, align 4
-  %tmp_18_0_2_2 = mul nsw i32 %B_8_load, %A_load_8
-  %input_coords_1 = add i17 %tmp_12_1, %center_y_cast1
-  %tmp_16_1 = zext i17 %input_coords_1 to i64
-  %A_addr_9 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1
+  %tmp_16_0_2_2 = mul nsw i32 %B_8_load, %A_load_8
+  %input_coords_1 = add i17 %tmp_10_1, %shift_y_cast1
+  %tmp_14_1 = zext i17 %input_coords_1 to i64
+  %A_addr_9 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_1
   %A_load_9 = load i32* %A_addr_9, align 4
   %B_9_load = load i32* %B_9_addr, align 4
-  %tmp_18_1 = mul nsw i32 %B_9_load, %A_load_9
+  %tmp_16_1 = mul nsw i32 %B_9_load, %A_load_9
   %input_coords_1_0_1 = add i17 %input_coords_1, 1
-  %tmp_16_1_0_1 = zext i17 %input_coords_1_0_1 to i64
-  %A_addr_10 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_0_1
+  %tmp_14_1_0_1 = zext i17 %input_coords_1_0_1 to i64
+  %A_addr_10 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_1_0_1
   %A_load_10 = load i32* %A_addr_10, align 4
   %B_10_load = load i32* %B_10_addr, align 4
-  %tmp_18_1_0_1 = mul nsw i32 %B_10_load, %A_load_10
+  %tmp_16_1_0_1 = mul nsw i32 %B_10_load, %A_load_10
   %input_coords_1_0_2 = add i17 %input_coords_1, 2
-  %tmp_16_1_0_2 = zext i17 %input_coords_1_0_2 to i64
-  %A_addr_11 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_0_2
+  %tmp_14_1_0_2 = zext i17 %input_coords_1_0_2 to i64
+  %A_addr_11 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_1_0_2
   %A_load_11 = load i32* %A_addr_11, align 4
   %B_11_load = load i32* %B_11_addr, align 4
-  %tmp_18_1_0_2 = mul nsw i32 %B_11_load, %A_load_11
-  %input_coords_1_1 = add i17 %tmp_12_1_1, %center_y_cast1
-  %tmp_16_1_1 = zext i17 %input_coords_1_1 to i64
-  %A_addr_12 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_1
+  %tmp_16_1_0_2 = mul nsw i32 %B_11_load, %A_load_11
+  %input_coords_1_1 = add i17 %tmp_10_1_1, %shift_y_cast1
+  %tmp_14_1_1 = zext i17 %input_coords_1_1 to i64
+  %A_addr_12 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_1_1
   %A_load_12 = load i32* %A_addr_12, align 4
   %B_12_load = load i32* %B_12_addr, align 4
-  %tmp_18_1_1 = mul nsw i32 %B_12_load, %A_load_12
+  %tmp_16_1_1 = mul nsw i32 %B_12_load, %A_load_12
   %input_coords_1_1_1 = add i17 %input_coords_1_1, 1
-  %tmp_16_1_1_1 = zext i17 %input_coords_1_1_1 to i64
-  %A_addr_13 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_1_1
+  %tmp_14_1_1_1 = zext i17 %input_coords_1_1_1 to i64
+  %A_addr_13 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_1_1_1
   %A_load_13 = load i32* %A_addr_13, align 4
   %B_13_load = load i32* %B_13_addr, align 4
-  %tmp_18_1_1_1 = mul nsw i32 %B_13_load, %A_load_13
+  %tmp_16_1_1_1 = mul nsw i32 %B_13_load, %A_load_13
   %input_coords_1_1_2 = add i17 %input_coords_1_1, 2
-  %tmp_16_1_1_2 = zext i17 %input_coords_1_1_2 to i64
-  %A_addr_14 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_1_2
+  %tmp_14_1_1_2 = zext i17 %input_coords_1_1_2 to i64
+  %A_addr_14 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_1_1_2
   %A_load_14 = load i32* %A_addr_14, align 4
   %B_14_load = load i32* %B_14_addr, align 4
-  %tmp_18_1_1_2 = mul nsw i32 %B_14_load, %A_load_14
-  %input_coords_1_2 = add i17 %tmp_12_1_2, %center_y_cast1
-  %tmp_16_1_2 = zext i17 %input_coords_1_2 to i64
-  %A_addr_15 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_2
+  %tmp_16_1_1_2 = mul nsw i32 %B_14_load, %A_load_14
+  %input_coords_1_2 = add i17 %tmp_10_1_2, %shift_y_cast1
+  %tmp_14_1_2 = zext i17 %input_coords_1_2 to i64
+  %A_addr_15 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_1_2
   %A_load_15 = load i32* %A_addr_15, align 4
   %B_15_load = load i32* %B_15_addr, align 4
-  %tmp_18_1_2 = mul nsw i32 %B_15_load, %A_load_15
+  %tmp_16_1_2 = mul nsw i32 %B_15_load, %A_load_15
   %input_coords_1_2_1 = add i17 %input_coords_1_2, 1
-  %tmp_16_1_2_1 = zext i17 %input_coords_1_2_1 to i64
-  %A_addr_16 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_2_1
+  %tmp_14_1_2_1 = zext i17 %input_coords_1_2_1 to i64
+  %A_addr_16 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_1_2_1
   %A_load_16 = load i32* %A_addr_16, align 4
   %B_16_load = load i32* %B_16_addr, align 4
-  %tmp_18_1_2_1 = mul nsw i32 %B_16_load, %A_load_16
+  %tmp_16_1_2_1 = mul nsw i32 %B_16_load, %A_load_16
   %input_coords_1_2_2 = add i17 %input_coords_1_2, 2
-  %tmp_16_1_2_2 = zext i17 %input_coords_1_2_2 to i64
-  %A_addr_17 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_1_2_2
+  %tmp_14_1_2_2 = zext i17 %input_coords_1_2_2 to i64
+  %A_addr_17 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_1_2_2
   %A_load_17 = load i32* %A_addr_17, align 4
   %B_17_load = load i32* %B_17_addr, align 4
-  %tmp_18_1_2_2 = mul nsw i32 %B_17_load, %A_load_17
-  %input_coords_2 = add i18 %tmp_12_2, %center_y_cast
-  %tmp_16_2 = zext i18 %input_coords_2 to i64
-  %A_addr_18 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2
+  %tmp_16_1_2_2 = mul nsw i32 %B_17_load, %A_load_17
+  %input_coords_2 = add i18 %tmp_10_2, %shift_y_cast
+  %tmp_14_2 = zext i18 %input_coords_2 to i64
+  %A_addr_18 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_2
   %A_load_18 = load i32* %A_addr_18, align 4
   %B_18_load = load i32* %B_18_addr, align 4
-  %tmp_18_2 = mul nsw i32 %B_18_load, %A_load_18
+  %tmp_16_2 = mul nsw i32 %B_18_load, %A_load_18
   %input_coords_2_0_1 = add i18 %input_coords_2, 1
-  %tmp_16_2_0_1 = zext i18 %input_coords_2_0_1 to i64
-  %A_addr_19 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_0_1
+  %tmp_14_2_0_1 = zext i18 %input_coords_2_0_1 to i64
+  %A_addr_19 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_2_0_1
   %A_load_19 = load i32* %A_addr_19, align 4
   %B_19_load = load i32* %B_19_addr, align 4
-  %tmp_18_2_0_1 = mul nsw i32 %B_19_load, %A_load_19
+  %tmp_16_2_0_1 = mul nsw i32 %B_19_load, %A_load_19
   %input_coords_2_0_2 = add i18 %input_coords_2, 2
-  %tmp_16_2_0_2 = zext i18 %input_coords_2_0_2 to i64
-  %A_addr_20 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_0_2
+  %tmp_14_2_0_2 = zext i18 %input_coords_2_0_2 to i64
+  %A_addr_20 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_2_0_2
   %A_load_20 = load i32* %A_addr_20, align 4
   %B_20_load = load i32* %B_20_addr, align 4
-  %tmp_18_2_0_2 = mul nsw i32 %B_20_load, %A_load_20
-  %input_coords_2_1 = add i18 %tmp_12_2_1, %center_y_cast
-  %tmp_16_2_1 = zext i18 %input_coords_2_1 to i64
-  %A_addr_21 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_1
+  %tmp_16_2_0_2 = mul nsw i32 %B_20_load, %A_load_20
+  %input_coords_2_1 = add i18 %tmp_10_2_1, %shift_y_cast
+  %tmp_14_2_1 = zext i18 %input_coords_2_1 to i64
+  %A_addr_21 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_2_1
   %A_load_21 = load i32* %A_addr_21, align 4
   %B_21_load = load i32* %B_21_addr, align 4
-  %tmp_18_2_1 = mul nsw i32 %B_21_load, %A_load_21
+  %tmp_16_2_1 = mul nsw i32 %B_21_load, %A_load_21
   %input_coords_2_1_1 = add i18 %input_coords_2_1, 1
-  %tmp_16_2_1_1 = zext i18 %input_coords_2_1_1 to i64
-  %A_addr_22 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_1_1
+  %tmp_14_2_1_1 = zext i18 %input_coords_2_1_1 to i64
+  %A_addr_22 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_2_1_1
   %A_load_22 = load i32* %A_addr_22, align 4
   %B_22_load = load i32* %B_22_addr, align 4
-  %tmp_18_2_1_1 = mul nsw i32 %B_22_load, %A_load_22
+  %tmp_16_2_1_1 = mul nsw i32 %B_22_load, %A_load_22
   %input_coords_2_1_2 = add i18 %input_coords_2_1, 2
-  %tmp_16_2_1_2 = zext i18 %input_coords_2_1_2 to i64
-  %A_addr_23 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_1_2
+  %tmp_14_2_1_2 = zext i18 %input_coords_2_1_2 to i64
+  %A_addr_23 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_2_1_2
   %A_load_23 = load i32* %A_addr_23, align 4
   %B_23_load = load i32* %B_23_addr, align 4
-  %tmp_18_2_1_2 = mul nsw i32 %B_23_load, %A_load_23
-  %input_coords_2_2 = add i18 %tmp_12_2_2, %center_y_cast
-  %tmp_16_2_2 = zext i18 %input_coords_2_2 to i64
-  %A_addr_24 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_2
+  %tmp_16_2_1_2 = mul nsw i32 %B_23_load, %A_load_23
+  %input_coords_2_2 = add i18 %tmp_10_2_2, %shift_y_cast
+  %tmp_14_2_2 = zext i18 %input_coords_2_2 to i64
+  %A_addr_24 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_2_2
   %A_load_24 = load i32* %A_addr_24, align 4
   %B_24_load = load i32* %B_24_addr, align 4
-  %tmp_18_2_2 = mul nsw i32 %B_24_load, %A_load_24
+  %tmp_16_2_2 = mul nsw i32 %B_24_load, %A_load_24
   %input_coords_2_2_1 = add i18 %input_coords_2_2, 1
-  %tmp_16_2_2_1 = zext i18 %input_coords_2_2_1 to i64
-  %A_addr_25 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_2_1
+  %tmp_14_2_2_1 = zext i18 %input_coords_2_2_1 to i64
+  %A_addr_25 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_2_2_1
   %A_load_25 = load i32* %A_addr_25, align 4
   %B_25_load = load i32* %B_25_addr, align 4
-  %tmp_18_2_2_1 = mul nsw i32 %B_25_load, %A_load_25
+  %tmp_16_2_2_1 = mul nsw i32 %B_25_load, %A_load_25
   %input_coords_2_2_2 = add i18 %input_coords_2_2, 2
-  %tmp_16_2_2_2 = zext i18 %input_coords_2_2_2 to i64
-  %A_addr_26 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_16_2_2_2
+  %tmp_14_2_2_2 = zext i18 %input_coords_2_2_2 to i64
+  %A_addr_26 = getelementptr [150528 x i32]* %A, i64 0, i64 %tmp_14_2_2_2
   %A_load_26 = load i32* %A_addr_26, align 4
   %B_26_load = load i32* %B_26_addr, align 4
-  %tmp_18_2_2_2 = mul nsw i32 %B_26_load, %A_load_26
-  %tmp4 = add i32 %tmp_4, %tmp_18_0_0_2
-  %tmp3 = add i32 %tmp4, %tmp_18_0_0_1
-  %tmp6 = add i32 %tmp_18_0_1_1, %tmp_18_0_1_2
-  %tmp5 = add i32 %tmp6, %tmp_18_0_1
-  %tmp2 = add i32 %tmp5, %tmp3
-  %tmp9 = add i32 %tmp_18_0_2_1, %tmp_18_0_2_2
-  %tmp8 = add i32 %tmp9, %tmp_18_0_2
-  %tmp = add i32 %tmp_18_1, %tmp_18_1_0_1
-  %tmp11 = add i32 %tmp_18_1_0_2, %tmp_18_1_1
-  %tmp10 = add i32 %tmp11, %tmp
-  %tmp7 = add i32 %tmp10, %tmp8
-  %tmp1 = add i32 %tmp7, %tmp2
-  %tmp12 = add i32 %tmp_18_1_1_2, %tmp_18_1_2
-  %tmp15 = add i32 %tmp12, %tmp_18_1_1_1
-  %tmp16 = add i32 %tmp_18_1_2_1, %tmp_18_1_2_2
-  %tmp18 = add i32 %tmp_18_2, %tmp_18_2_0_1
-  %tmp17 = add i32 %tmp18, %tmp16
-  %tmp14 = add i32 %tmp17, %tmp15
-  %tmp19 = add i32 %tmp_18_2_1, %tmp_18_2_1_1
-  %tmp21 = add i32 %tmp19, %tmp_18_2_0_2
-  %tmp22 = add i32 %tmp_18_2_1_2, %tmp_18_2_2
-  %tmp24 = add i32 %tmp_18_2_2_1, %tmp_18_2_2_2
-  %tmp23 = add i32 %tmp24, %tmp22
-  %tmp20 = add i32 %tmp23, %tmp21
-  %tmp13 = add i32 %tmp20, %tmp14
-  %result_3_2_2_2 = add nsw i32 %tmp13, %tmp1
-  call void @_ssdm_op_Write.axis.volatile.i32P(i32* %C, i32 %result_3_2_2_2)
-  %empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str816, i32 %tmp_2) nounwind
+  %tmp_16_2_2_2 = mul nsw i32 %B_26_load, %A_load_26
+  %tmp5 = add i32 %tmp_5, %tmp_16_0_0_2
+  %tmp4 = add i32 %tmp5, %tmp_16_0_0_1
+  %tmp7 = add i32 %tmp_16_0_1_1, %tmp_16_0_1_2
+  %tmp6 = add i32 %tmp7, %tmp_16_0_1
+  %tmp3 = add i32 %tmp6, %tmp4
+  %tmp = add i32 %tmp_16_0_2_1, %tmp_16_0_2_2
+  %tmp9 = add i32 %tmp, %tmp_16_0_2
+  %tmp10 = add i32 %tmp_16_1, %tmp_16_1_0_1
+  %tmp12 = add i32 %tmp_16_1_0_2, %tmp_16_1_1
+  %tmp11 = add i32 %tmp12, %tmp10
+  %tmp8 = add i32 %tmp11, %tmp9
+  %tmp2 = add i32 %tmp8, %tmp3
+  %tmp13 = add i32 %tmp_16_1_1_2, %tmp_16_1_2
+  %tmp16 = add i32 %tmp13, %tmp_16_1_1_1
+  %tmp17 = add i32 %tmp_16_1_2_1, %tmp_16_1_2_2
+  %tmp19 = add i32 %tmp_16_2, %tmp_16_2_0_1
+  %tmp18 = add i32 %tmp19, %tmp17
+  %tmp15 = add i32 %tmp18, %tmp16
+  %tmp20 = add i32 %tmp_16_2_1, %tmp_16_2_1_1
+  %tmp22 = add i32 %tmp20, %tmp_16_2_0_2
+  %tmp23 = add i32 %tmp_16_2_1_2, %tmp_16_2_2
+  %tmp25 = add i32 %tmp_16_2_2_1, %tmp_16_2_2_2
+  %tmp24 = add i32 %tmp25, %tmp23
+  %tmp21 = add i32 %tmp24, %tmp22
+  %tmp14 = add i32 %tmp21, %tmp15
+  %result_3_2_2_2 = add nsw i32 %tmp14, %tmp2
+  %tmp_7 = zext i21 %output_coords to i64
+  %C_addr = getelementptr [1577088 x i32]* %C, i64 0, i64 %tmp_7
+  store i32 %result_3_2_2_2, i32* %C_addr, align 4
+  %empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str513, i32 %tmp_3) nounwind
   br label %1
 
 .preheader.preheader:                             ; preds = %.preheader
   %empty_3 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7104, i64 7104, i64 7104)
-  %tmp_3 = icmp eq i8 %center_x, -34
-  %center_x_mid2 = select i1 %tmp_3, i8 0, i8 %center_x
+  %tmp_2 = icmp eq i8 %shift_x, -34
+  %shift_x_mid2 = select i1 %tmp_2, i8 0, i8 %shift_x
   %channel_out_s = add i6 %channel_out, 1
-  %channel_out2_mid2_v = select i1 %tmp_3, i6 %channel_out_s, i6 %channel_out
-  %channel_out2_mid2 = zext i6 %channel_out2_mid2_v to i64
-  %center_x_cast1 = zext i8 %center_x_mid2 to i10
-  %center_x_cast = zext i8 %center_x_mid2 to i9
-  %p_shl = call i16 @_ssdm_op_BitConcatenate.i16.i8.i8(i8 %center_x_mid2, i8 0)
+  %tmp_1_mid2_v_v = select i1 %tmp_2, i6 %channel_out_s, i6 %channel_out
+  %tmp_1_mid2_v = zext i6 %tmp_1_mid2_v_v to i21
+  %tmp_1_mid2 = mul i21 %tmp_1_mid2_v, 49284
+  %channel_out2_mid2 = zext i6 %tmp_1_mid2_v_v to i64
+  %shift_x_cast1 = zext i8 %shift_x_mid2 to i10
+  %shift_x_cast2 = zext i8 %shift_x_mid2 to i17
+  %shift_x_cast = zext i8 %shift_x_mid2 to i9
+  %output_x_coords = mul i17 %shift_x_cast2, 222
+  %output_x_coords_cast = zext i17 %output_x_coords to i21
+  %p_shl = call i16 @_ssdm_op_BitConcatenate.i16.i8.i8(i8 %shift_x_mid2, i8 0)
   %p_shl12_cast = zext i16 %p_shl to i17
-  %p_shl1 = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %center_x_mid2, i5 0)
+  %p_shl1 = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %shift_x_mid2, i5 0)
   %p_shl13_cast = zext i13 %p_shl1 to i17
   %tmp_s = sub i17 %p_shl12_cast, %p_shl13_cast
-  %center_x_1 = add i8 %center_x_mid2, 1
-  %p_shl12_0_1 = call i16 @_ssdm_op_BitConcatenate.i16.i8.i8(i8 %center_x_1, i8 0)
+  %center_x = add i8 %shift_x_mid2, 1
+  %p_shl12_0_1 = call i16 @_ssdm_op_BitConcatenate.i16.i8.i8(i8 %center_x, i8 0)
   %p_shl12_0_1_cast = zext i16 %p_shl12_0_1 to i17
-  %p_shl13_0_1 = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %center_x_1, i5 0)
+  %p_shl13_0_1 = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %center_x, i5 0)
   %p_shl13_0_1_cast = zext i13 %p_shl13_0_1 to i17
-  %tmp_12_0_1 = sub i17 %p_shl12_0_1_cast, %p_shl13_0_1_cast
-  %tmp_11_0_2 = add i8 %center_x_mid2, 2
-  %p_shl12_0_2 = call i16 @_ssdm_op_BitConcatenate.i16.i8.i8(i8 %tmp_11_0_2, i8 0)
+  %tmp_10_0_1 = sub i17 %p_shl12_0_1_cast, %p_shl13_0_1_cast
+  %tmp_8_0_2 = add i8 %shift_x_mid2, 2
+  %p_shl12_0_2 = call i16 @_ssdm_op_BitConcatenate.i16.i8.i8(i8 %tmp_8_0_2, i8 0)
   %p_shl12_0_2_cast = zext i16 %p_shl12_0_2 to i17
-  %p_shl13_0_2 = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %tmp_11_0_2, i5 0)
+  %p_shl13_0_2 = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %tmp_8_0_2, i5 0)
   %p_shl13_0_2_cast = zext i13 %p_shl13_0_2 to i17
-  %tmp_12_0_2 = sub i17 %p_shl12_0_2_cast, %p_shl13_0_2_cast
-  %tmp_11_1 = add i9 %center_x_cast, 224
-  %p_shl12_1 = call i17 @_ssdm_op_BitConcatenate.i17.i9.i8(i9 %tmp_11_1, i8 0)
-  %p_shl13_1 = call i14 @_ssdm_op_BitConcatenate.i14.i9.i5(i9 %tmp_11_1, i5 0)
+  %tmp_10_0_2 = sub i17 %p_shl12_0_2_cast, %p_shl13_0_2_cast
+  %tmp_8_1 = add i9 %shift_x_cast, 224
+  %p_shl12_1 = call i17 @_ssdm_op_BitConcatenate.i17.i9.i8(i9 %tmp_8_1, i8 0)
+  %p_shl13_1 = call i14 @_ssdm_op_BitConcatenate.i14.i9.i5(i9 %tmp_8_1, i5 0)
   %p_shl13_1_cast = zext i14 %p_shl13_1 to i17
-  %tmp_12_1 = sub i17 %p_shl12_1, %p_shl13_1_cast
-  %tmp_11_1_1 = add i9 %center_x_cast, 225
-  %p_shl12_1_1 = call i17 @_ssdm_op_BitConcatenate.i17.i9.i8(i9 %tmp_11_1_1, i8 0)
-  %p_shl13_1_1 = call i14 @_ssdm_op_BitConcatenate.i14.i9.i5(i9 %tmp_11_1_1, i5 0)
+  %tmp_10_1 = sub i17 %p_shl12_1, %p_shl13_1_cast
+  %tmp_8_1_1 = add i9 %shift_x_cast, 225
+  %p_shl12_1_1 = call i17 @_ssdm_op_BitConcatenate.i17.i9.i8(i9 %tmp_8_1_1, i8 0)
+  %p_shl13_1_1 = call i14 @_ssdm_op_BitConcatenate.i14.i9.i5(i9 %tmp_8_1_1, i5 0)
   %p_shl13_1_1_cast = zext i14 %p_shl13_1_1 to i17
-  %tmp_12_1_1 = sub i17 %p_shl12_1_1, %p_shl13_1_1_cast
-  %tmp_11_1_2 = add i9 %center_x_cast, 226
-  %p_shl12_1_2 = call i17 @_ssdm_op_BitConcatenate.i17.i9.i8(i9 %tmp_11_1_2, i8 0)
-  %p_shl13_1_2 = call i14 @_ssdm_op_BitConcatenate.i14.i9.i5(i9 %tmp_11_1_2, i5 0)
+  %tmp_10_1_1 = sub i17 %p_shl12_1_1, %p_shl13_1_1_cast
+  %tmp_8_1_2 = add i9 %shift_x_cast, 226
+  %p_shl12_1_2 = call i17 @_ssdm_op_BitConcatenate.i17.i9.i8(i9 %tmp_8_1_2, i8 0)
+  %p_shl13_1_2 = call i14 @_ssdm_op_BitConcatenate.i14.i9.i5(i9 %tmp_8_1_2, i5 0)
   %p_shl13_1_2_cast = zext i14 %p_shl13_1_2 to i17
-  %tmp_12_1_2 = sub i17 %p_shl12_1_2, %p_shl13_1_2_cast
-  %tmp_11_2 = add i10 %center_x_cast1, 448
-  %p_shl12_2 = call i18 @_ssdm_op_BitConcatenate.i18.i10.i8(i10 %tmp_11_2, i8 0)
-  %p_shl13_2 = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_11_2, i5 0)
+  %tmp_10_1_2 = sub i17 %p_shl12_1_2, %p_shl13_1_2_cast
+  %tmp_8_2 = add i10 %shift_x_cast1, 448
+  %p_shl12_2 = call i18 @_ssdm_op_BitConcatenate.i18.i10.i8(i10 %tmp_8_2, i8 0)
+  %p_shl13_2 = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_8_2, i5 0)
   %p_shl13_2_cast = zext i15 %p_shl13_2 to i18
-  %tmp_12_2 = sub i18 %p_shl12_2, %p_shl13_2_cast
-  %tmp_11_2_1 = add i10 %center_x_cast1, 449
-  %p_shl12_2_1 = call i18 @_ssdm_op_BitConcatenate.i18.i10.i8(i10 %tmp_11_2_1, i8 0)
-  %p_shl13_2_1 = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_11_2_1, i5 0)
+  %tmp_10_2 = sub i18 %p_shl12_2, %p_shl13_2_cast
+  %tmp_8_2_1 = add i10 %shift_x_cast1, 449
+  %p_shl12_2_1 = call i18 @_ssdm_op_BitConcatenate.i18.i10.i8(i10 %tmp_8_2_1, i8 0)
+  %p_shl13_2_1 = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_8_2_1, i5 0)
   %p_shl13_2_1_cast = zext i15 %p_shl13_2_1 to i18
-  %tmp_12_2_1 = sub i18 %p_shl12_2_1, %p_shl13_2_1_cast
-  %tmp_11_2_2 = add i10 %center_x_cast1, 450
-  %p_shl12_2_2 = call i18 @_ssdm_op_BitConcatenate.i18.i10.i8(i10 %tmp_11_2_2, i8 0)
-  %p_shl13_2_2 = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_11_2_2, i5 0)
+  %tmp_10_2_1 = sub i18 %p_shl12_2_1, %p_shl13_2_1_cast
+  %tmp_8_2_2 = add i10 %shift_x_cast1, 450
+  %p_shl12_2_2 = call i18 @_ssdm_op_BitConcatenate.i18.i10.i8(i10 %tmp_8_2_2, i8 0)
+  %p_shl13_2_2 = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_8_2_2, i5 0)
   %p_shl13_2_2_cast = zext i15 %p_shl13_2_2 to i18
-  %tmp_12_2_2 = sub i18 %p_shl12_2_2, %p_shl13_2_2_cast
+  %tmp_10_2_2 = sub i18 %p_shl12_2_2, %p_shl13_2_2_cast
   %B_0_addr = getelementptr [32 x i32]* %B_0, i64 0, i64 %channel_out2_mid2
   %B_1_addr = getelementptr [32 x i32]* %B_1, i64 0, i64 %channel_out2_mid2
   %B_2_addr = getelementptr [32 x i32]* %B_2, i64 0, i64 %channel_out2_mid2
@@ -367,12 +373,6 @@ define void @macc_par_convs([150528 x i32]* %A, [32 x i32]* %B_0, [32 x i32]* %B
 
 declare void @llvm.dbg.value(metadata, i64, metadata) nounwind readnone
 
-define weak void @_ssdm_op_Write.axis.volatile.i32P(i32*, i32) {
-entry:
-  store i32 %1, i32* %0
-  ret void
-}
-
 define weak void @_ssdm_op_SpecTopModule(...) {
 entry:
   ret void
@@ -389,11 +389,6 @@ entry:
 }
 
 define weak void @_ssdm_op_SpecPipeline(...) nounwind {
-entry:
-  ret void
-}
-
-define weak void @_ssdm_op_SpecMemCore(...) {
 entry:
   ret void
 }
@@ -469,7 +464,7 @@ entry:
 
 declare void @_GLOBAL__I_a5() nounwind section ".text.startup"
 
-declare void @_GLOBAL__I_a43() nounwind section ".text.startup"
+declare void @_GLOBAL__I_a48() nounwind section ".text.startup"
 
 declare void @_GLOBAL__I_a34() nounwind section ".text.startup"
 

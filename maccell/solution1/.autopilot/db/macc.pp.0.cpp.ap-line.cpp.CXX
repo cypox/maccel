@@ -13,5 +13,5 @@
 #pragma line 1 "<built-in>" 2 ::: 203
 #pragma line 1 "maccell/src/macc.cpp" 2 ::: 204
 #pragma line 1 "maccell/src/macc.h" 1 ::: 213
-#pragma line 20 "maccell/src/macc.h" ::: 220
-#pragma line 9 "maccell/src/macc.cpp" 2 ::: 249
+#pragma line 23 "maccell/src/macc.h" ::: 226
+#pragma line 9 "maccell/src/macc.cpp" 2 ::: 255

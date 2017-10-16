@@ -43,7 +43,7 @@ set C_modelArgList {
 	{ B_24 int 32 regular {bram 32 { 1 3 } 1 1 }  }
 	{ B_25 int 32 regular {bram 32 { 1 3 } 1 1 }  }
 	{ B_26 int 32 regular {bram 32 { 1 3 } 1 1 }  }
-	{ C int 32 regular {axi_s 1 volatile  { C Data } }  }
+	{ C int 32 regular {bram 1577088 { 0 3 } 1 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "A", "interface" : "bram", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "A","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 150527,"step" : 1}]}]}]} , 
@@ -74,9 +74,9 @@ set C_modelArgMapList {[
  	{ "Name" : "B_24", "interface" : "bram", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "B","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 24,"up" : 861,"step" : 27}]}]}]} , 
  	{ "Name" : "B_25", "interface" : "bram", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "B","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 25,"up" : 862,"step" : 27}]}]}]} , 
  	{ "Name" : "B_26", "interface" : "bram", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "B","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 26,"up" : 863,"step" : 27}]}]}]} , 
- 	{ "Name" : "C", "interface" : "axis", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "C","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 1577087,"step" : 1}]}]}]} ]}
+ 	{ "Name" : "C", "interface" : "bram", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "C","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 1577087,"step" : 1}]}]}]} ]}
 # RTL Port declarations: 
-set portNum 226
+set portNum 230
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
@@ -283,9 +283,13 @@ set portList {
 	{ B_26_Dout_A sc_in sc_lv 32 signal 27 } 
 	{ B_26_Clk_A sc_out sc_logic 1 signal 27 } 
 	{ B_26_Rst_A sc_out sc_logic 1 signal 27 } 
-	{ C_TDATA sc_out sc_lv 32 signal 28 } 
-	{ C_TVALID sc_out sc_logic 1 outvld 28 } 
-	{ C_TREADY sc_in sc_logic 1 outacc 28 } 
+	{ C_Addr_A sc_out sc_lv 32 signal 28 } 
+	{ C_EN_A sc_out sc_logic 1 signal 28 } 
+	{ C_WEN_A sc_out sc_lv 4 signal 28 } 
+	{ C_Din_A sc_out sc_lv 32 signal 28 } 
+	{ C_Dout_A sc_in sc_lv 32 signal 28 } 
+	{ C_Clk_A sc_out sc_logic 1 signal 28 } 
+	{ C_Rst_A sc_out sc_logic 1 signal 28 } 
 	{ s_axi_CTRL_BUS_AWVALID sc_in sc_logic 1 signal -1 } 
 	{ s_axi_CTRL_BUS_AWREADY sc_out sc_logic 1 signal -1 } 
 	{ s_axi_CTRL_BUS_AWADDR sc_in sc_lv 4 signal -1 } 
@@ -529,12 +533,16 @@ set NewPortList {[
  	{ "name": "B_26_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "B_26", "role": "Dout_A" }} , 
  	{ "name": "B_26_Clk_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "B_26", "role": "Clk_A" }} , 
  	{ "name": "B_26_Rst_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "B_26", "role": "Rst_A" }} , 
- 	{ "name": "C_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "C", "role": "TDATA" }} , 
- 	{ "name": "C_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "C", "role": "TVALID" }} , 
- 	{ "name": "C_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "C", "role": "TREADY" }}  ]}
+ 	{ "name": "C_Addr_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "C", "role": "Addr_A" }} , 
+ 	{ "name": "C_EN_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C", "role": "EN_A" }} , 
+ 	{ "name": "C_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "C", "role": "WEN_A" }} , 
+ 	{ "name": "C_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "C", "role": "Din_A" }} , 
+ 	{ "name": "C_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "C", "role": "Dout_A" }} , 
+ 	{ "name": "C_Clk_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C", "role": "Clk_A" }} , 
+ 	{ "name": "C_Rst_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "C", "role": "Rst_A" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2"],
 		"CDFG" : "macc_par_convs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -571,42 +579,41 @@ set RtlHierarchyInfo {[
 			{"Name" : "B_24", "Type" : "Bram", "Direction" : "I"},
 			{"Name" : "B_25", "Type" : "Bram", "Direction" : "I"},
 			{"Name" : "B_26", "Type" : "Bram", "Direction" : "I"},
-			{"Name" : "C", "Type" : "Axis", "Direction" : "O",
-				"BlockSignal" : [
-					{"Name" : "C_TDATA_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.macc_par_convs_CTRL_BUS_s_axi_U", "Parent" : "0"}]}
+			{"Name" : "C", "Type" : "Bram", "Direction" : "O"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.macc_par_convs_CTRL_BUS_s_axi_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.macc_par_convs_mubkb_U1", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	macc_par_convs {
 		A {Type I LastRead 16 FirstWrite -1}
 		B_0 {Type I LastRead 2 FirstWrite -1}
-		B_1 {Type I LastRead 2 FirstWrite -1}
-		B_2 {Type I LastRead 3 FirstWrite -1}
-		B_3 {Type I LastRead 3 FirstWrite -1}
-		B_4 {Type I LastRead 4 FirstWrite -1}
-		B_5 {Type I LastRead 4 FirstWrite -1}
-		B_6 {Type I LastRead 5 FirstWrite -1}
-		B_7 {Type I LastRead 5 FirstWrite -1}
-		B_8 {Type I LastRead 6 FirstWrite -1}
-		B_9 {Type I LastRead 6 FirstWrite -1}
-		B_10 {Type I LastRead 7 FirstWrite -1}
-		B_11 {Type I LastRead 7 FirstWrite -1}
-		B_12 {Type I LastRead 8 FirstWrite -1}
-		B_13 {Type I LastRead 8 FirstWrite -1}
-		B_14 {Type I LastRead 9 FirstWrite -1}
-		B_15 {Type I LastRead 9 FirstWrite -1}
-		B_16 {Type I LastRead 10 FirstWrite -1}
-		B_17 {Type I LastRead 10 FirstWrite -1}
-		B_18 {Type I LastRead 11 FirstWrite -1}
-		B_19 {Type I LastRead 11 FirstWrite -1}
-		B_20 {Type I LastRead 12 FirstWrite -1}
-		B_21 {Type I LastRead 12 FirstWrite -1}
-		B_22 {Type I LastRead 13 FirstWrite -1}
-		B_23 {Type I LastRead 13 FirstWrite -1}
-		B_24 {Type I LastRead 14 FirstWrite -1}
-		B_25 {Type I LastRead 14 FirstWrite -1}
-		B_26 {Type I LastRead 15 FirstWrite -1}
+		B_1 {Type I LastRead 13 FirstWrite -1}
+		B_2 {Type I LastRead 2 FirstWrite -1}
+		B_3 {Type I LastRead 13 FirstWrite -1}
+		B_4 {Type I LastRead 3 FirstWrite -1}
+		B_5 {Type I LastRead 3 FirstWrite -1}
+		B_6 {Type I LastRead 14 FirstWrite -1}
+		B_7 {Type I LastRead 4 FirstWrite -1}
+		B_8 {Type I LastRead 4 FirstWrite -1}
+		B_9 {Type I LastRead 5 FirstWrite -1}
+		B_10 {Type I LastRead 5 FirstWrite -1}
+		B_11 {Type I LastRead 6 FirstWrite -1}
+		B_12 {Type I LastRead 6 FirstWrite -1}
+		B_13 {Type I LastRead 14 FirstWrite -1}
+		B_14 {Type I LastRead 7 FirstWrite -1}
+		B_15 {Type I LastRead 7 FirstWrite -1}
+		B_16 {Type I LastRead 8 FirstWrite -1}
+		B_17 {Type I LastRead 8 FirstWrite -1}
+		B_18 {Type I LastRead 9 FirstWrite -1}
+		B_19 {Type I LastRead 9 FirstWrite -1}
+		B_20 {Type I LastRead 15 FirstWrite -1}
+		B_21 {Type I LastRead 10 FirstWrite -1}
+		B_22 {Type I LastRead 10 FirstWrite -1}
+		B_23 {Type I LastRead 11 FirstWrite -1}
+		B_24 {Type I LastRead 11 FirstWrite -1}
+		B_25 {Type I LastRead 12 FirstWrite -1}
+		B_26 {Type I LastRead 12 FirstWrite -1}
 		C {Type O LastRead -1 FirstWrite 16}}}
 
 set hasDtUnsupportedChannel 0
@@ -649,7 +656,7 @@ set Spec2ImplPortList {
 	B_24 { bram {  { B_24_Addr_A mem_address 1 32 }  { B_24_EN_A mem_ce 1 1 }  { B_24_WEN_A mem_we 1 4 }  { B_24_Din_A mem_din 1 32 }  { B_24_Dout_A mem_dout 0 32 }  { B_24_Clk_A mem_clk 1 1 }  { B_24_Rst_A mem_rst 1 1 } } }
 	B_25 { bram {  { B_25_Addr_A mem_address 1 32 }  { B_25_EN_A mem_ce 1 1 }  { B_25_WEN_A mem_we 1 4 }  { B_25_Din_A mem_din 1 32 }  { B_25_Dout_A mem_dout 0 32 }  { B_25_Clk_A mem_clk 1 1 }  { B_25_Rst_A mem_rst 1 1 } } }
 	B_26 { bram {  { B_26_Addr_A mem_address 1 32 }  { B_26_EN_A mem_ce 1 1 }  { B_26_WEN_A mem_we 1 4 }  { B_26_Din_A mem_din 1 32 }  { B_26_Dout_A mem_dout 0 32 }  { B_26_Clk_A mem_clk 1 1 }  { B_26_Rst_A mem_rst 1 1 } } }
-	C { axis {  { C_TDATA out_data 1 32 }  { C_TVALID out_vld 1 1 }  { C_TREADY out_acc 0 1 } } }
+	C { bram {  { C_Addr_A mem_address 1 32 }  { C_EN_A mem_ce 1 1 }  { C_WEN_A mem_we 1 4 }  { C_Din_A mem_din 1 32 }  { C_Dout_A mem_dout 0 32 }  { C_Clk_A mem_clk 1 1 }  { C_Rst_A mem_rst 1 1 } } }
 }
 
 set busDeadlockParameterList { 

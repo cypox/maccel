@@ -34188,7 +34188,13 @@ extern int matherr (struct __exception *__exc) throw ();
  *  Created on: Oct 4, 2017
  *      Author: cypox
  */
-#20 "maccell/src/macc.h"
+
+
+
+
+
+//#define STREAM_OUTPUT
+#23 "maccell/src/macc.h"
 //#define INPUT_SIZE 150528 // 1 * 3 * 224 * 224
 
 
@@ -34222,16 +34228,24 @@ void print_python(const data_t V[], uint number, uint channels, uint size);
 
 void macc_4d(const data_t A[1][3][224][224], const data_t B[32][3][3][3], data_t C[1][32][((224 + 2 * 0 - 3 ) / 1 + 1)][((224 + 2 * 0 - 3 ) / 1 + 1)])
 {_ssdm_SpecArrayDimSize(A,1);_ssdm_SpecArrayDimSize(B,32);_ssdm_SpecArrayDimSize(C,1);
+_ssdm_op_SpecInterface(A, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(B, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(C, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+
+_ssdm_SpecArrayPartition( A, 3, "CYCLIC", 3, "");
+_ssdm_SpecArrayPartition( B, 2, "CYCLIC", 3, "");
  for ( uint center_x = 0 ; center_x < ((224 + 2 * 0 - 3 ) / 1 + 1) ; ++ center_x )
  {
   for ( uint center_y = 0 ; center_y < ((224 + 2 * 0 - 3 ) / 1 + 1) ; ++ center_y )
   {
    for ( uint channel_out = 0 ; channel_out < 32 ; ++ channel_out )
    {
-    data_t result = 0;
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ data_t result = 0;
     for ( uint channel_in = 0 ; channel_in < 3 ; ++ channel_in )
     {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_Unroll(0,0,0, "");
  for ( uint i = 0 ; i < 3 ; ++ i )
      {
 _ssdm_Unroll(0,0,0, "");

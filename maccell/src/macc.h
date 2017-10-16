@@ -9,6 +9,9 @@
 #define SRC_MACC_H_
 
 
+//#define STREAM_OUTPUT
+
+
 #define PAD 0
 #define STRIDE 1
 #define BATCH 1

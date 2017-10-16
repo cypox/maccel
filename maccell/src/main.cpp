@@ -73,7 +73,7 @@ int main(int argc, char** argv)
 			for ( uint j = 0 ; j < WEIGHT_H ; ++ j)
 				for ( uint k = 0 ; k < WEIGHT_W ; ++ k)
 					weight_4d[n][i][j][k] = (data_t)std::rand() % 10;
-	*/
+	//*/
 
 	macc_ref(input, weight, sw_output);
 	//macc(input, weight, simple);
@@ -97,6 +97,15 @@ int main(int argc, char** argv)
 			std::cout << "Outputs does not match!" << std::endl;
 			return -1;
 		}
+
+//	for ( uint i = 0 ; i < WEIGHT_NUM ; ++ i )
+//		for ( uint j = 0 ; j < OUTPUT_H ; ++ j)
+//			for ( uint k = 0 ; k < OUTPUT_W ; ++ k)
+//				if ( sw_output[((0 * WEIGHT_NUM + i ) * OUTPUT_H + j ) * OUTPUT_W + k] != output_4d[0][i][j][k] )
+//				{
+//					std::cout << "Outputs does not match!" << std::endl;
+//					//return -1;
+//				}
 
 
 	std::free(sw_output);
