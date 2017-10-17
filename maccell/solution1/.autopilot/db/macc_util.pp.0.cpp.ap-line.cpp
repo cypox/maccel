@@ -42146,9 +42146,9 @@ struct ap_ufixed: ap_fixed_base<_AP_W, _AP_I, false, _AP_Q, _AP_O, _AP_N> {
 //#define OUTPUT_SIZE 1204224 // equivalent to 1 * 96 * 112 * 112 FASTER R-CNN layer 1
 #pragma empty_line
 //typedef float data_t; // THIS WILL NOT PROVOKE EXPRESSION BALANCING
-//typedef int data_t;
+typedef int data_t;
 //typedef ap_int<4> data_t;
-typedef ap_fixed<8, 4> data_t;
+//typedef ap_fixed<8, 4> data_t;
 typedef unsigned int uint;
 #pragma empty_line
 #pragma empty_line

@@ -13,6 +13,7 @@
 
 
 //#define STREAM_OUTPUT
+#define _4D_
 
 
 #define PAD 0
@@ -20,8 +21,8 @@
 #define BATCH 1
 
 #define INPUT_C 3
-#define INPUT_W 9
-#define INPUT_H 9
+#define INPUT_W 224
+#define INPUT_H 224
 #define INPUT_SIZE BATCH*INPUT_C*INPUT_W*INPUT_H
 //#define INPUT_SIZE 150528 // 1 * 3 * 224 * 224
 
@@ -42,14 +43,17 @@ typedef int data_t;
 //typedef ap_fixed<8, 4> data_t;
 typedef unsigned int uint;
 
-
+#ifndef _4D_
 void macc(const data_t A[INPUT_SIZE], const data_t B[WEIGHT_SIZE], data_t C[OUTPUT_SIZE]);
 void macc_zynqnet(const data_t A[INPUT_SIZE], const data_t B[WEIGHT_SIZE], data_t C[OUTPUT_SIZE]);
 void macc_caffe(const data_t A[INPUT_SIZE], const data_t B[WEIGHT_SIZE], data_t C[OUTPUT_SIZE]);
 void macc_par_convs(const data_t A[INPUT_SIZE], const data_t B[WEIGHT_SIZE], data_t C[OUTPUT_SIZE]);
 void macc_fpga2015(const data_t A[INPUT_SIZE], const data_t B[WEIGHT_SIZE], data_t C[OUTPUT_SIZE]);
 void macc_ref(const data_t A[INPUT_SIZE], const data_t B[WEIGHT_SIZE], data_t C[OUTPUT_SIZE]);
+#else
 void macc_4d(const data_t A[1][INPUT_C][INPUT_H][INPUT_W], const data_t B[WEIGHT_NUM][INPUT_C][WEIGHT_H][WEIGHT_W], data_t C[1][WEIGHT_NUM][OUTPUT_W][OUTPUT_H]);
+void macc_4d_ref(const data_t A[1][INPUT_C][INPUT_H][INPUT_W], const data_t B[WEIGHT_NUM][INPUT_C][WEIGHT_H][WEIGHT_W], data_t C[1][WEIGHT_NUM][OUTPUT_W][OUTPUT_H]);
+#endif
 
 void print_matrix(const data_t V[], uint number, uint channels, uint size);
 void print_python(const data_t V[], uint number, uint channels, uint size);

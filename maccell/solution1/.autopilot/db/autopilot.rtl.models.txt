@@ -1,4 +1,2 @@
-macc_par_convs_mabkb
-macc_par_convs_macud
-macc_par_convs_CTRL_BUS_s_axi
-macc_par_convs
+macc_4d_CTRL_BUS_s_axi
+macc_4d

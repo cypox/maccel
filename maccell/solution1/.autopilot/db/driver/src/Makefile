@@ -22,7 +22,7 @@ OUTS = *.o
 
 
 libs:
-	echo "Compiling macc_par_convs"
+	echo "Compiling macc_4d"
 	$(COMPILER) $(COMPILER_FLAGS) $(EXTRA_COMPILER_FLAGS) $(INCLUDES) $(LIBSOURCES)
 	$(ARCHIVER) -r ${RELEASEDIR}/${LIB} $(OUTS)
 	make clean

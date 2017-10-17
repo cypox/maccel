@@ -10,6 +10,18 @@ INFO: [LIC 200-101] Checked out feature [xczu9eg-es1]
 INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-1-i-es1'
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-INFO: [SIM 211-1] CSim done with 0 errors.
+@E Simulation failed: Function 'main' returns nonzero value '255'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
 INFO: [SIM 211-3] *************** CSIM finish ***************
+4
+    while executing
+"source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/csim.tcl"
+    invoked from within
+"hls::main /home/cypox/phd/hls_vivado/maccell/maccell/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
 INFO: [LIC 200-101] Checked in feature [xczu9eg-es1]

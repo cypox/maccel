@@ -56,6 +56,34 @@ void macc_ref(const data_t A[INPUT_SIZE], const data_t B[WEIGHT_SIZE], data_t C[
 	}
 }
 
+void macc_4d_ref(const data_t A[BATCH][INPUT_C][INPUT_H][INPUT_W], const data_t B[WEIGHT_NUM][INPUT_C][WEIGHT_H][WEIGHT_W], data_t C[BATCH][WEIGHT_NUM][OUTPUT_W][OUTPUT_H])
+{
+	for ( uint center_x = 0 ; center_x < OUTPUT_H ; ++ center_x )
+	{
+		for ( uint center_y = 0 ; center_y < OUTPUT_W ; ++ center_y )
+		{
+			for ( uint channel_out = 0 ; channel_out < WEIGHT_NUM ; ++ channel_out )
+			{
+				data_t result = 0;
+				for ( uint channel_in = 0 ; channel_in < INPUT_C ; ++ channel_in )
+				{
+					for ( uint i = 0 ; i < WEIGHT_H ; ++ i )
+					{
+						for ( uint j = 0 ; j < WEIGHT_W ; ++ j )
+						{
+							uint input_x, input_y;
+							input_x = STRIDE * center_x - PAD + i;
+							input_y = STRIDE * center_y - PAD + j;
+							result += A[0][channel_in][input_x][input_y] * B[channel_out][channel_in][i][j];
+						}
+					}
+				}
+				C[0][channel_out][center_x][center_y] = result;
+			}
+		}
+	}
+}
+
 void print_matrix(const data_t V[], uint N, uint C, uint S)
 {
 	// print 4 dimensional matrix from vector

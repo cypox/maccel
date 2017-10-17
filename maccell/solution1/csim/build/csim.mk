@@ -19,7 +19,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../src/main.cpp ../../../src/macc.cpp ../../../src/macc_4d.cpp ../../../src/macc_caffe.cpp ../../../src/macc_fpga2015.cpp ../../../src/macc_par_convs.cpp ../../../src/macc_util.cpp ../../../src/macc_zynqnet.cpp
+HLS_SOURCES = ../../../src/main.cpp ../../../src/macc_zynqnet.cpp ../../../src/macc_util.cpp ../../../src/macc_par_convs.cpp ../../../src/macc_fpga2015.cpp ../../../src/macc_caffe.cpp ../../../src/macc_4d.cpp ../../../src/macc.cpp
 
 TARGET := csim.exe
 
@@ -75,35 +75,11 @@ $(ObjDir)/main.o: ../../../src/main.cpp $(ObjDir)/.dir
 
 -include $(ObjDir)/main.d
 
-$(ObjDir)/macc.o: ../../../src/macc.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../src/macc.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/macc_zynqnet.o: ../../../src/macc_zynqnet.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../src/macc_zynqnet.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/macc.d
-
-$(ObjDir)/macc_4d.o: ../../../src/macc_4d.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../src/macc_4d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/macc_4d.d
-
-$(ObjDir)/macc_caffe.o: ../../../src/macc_caffe.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../src/macc_caffe.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/macc_caffe.d
-
-$(ObjDir)/macc_fpga2015.o: ../../../src/macc_fpga2015.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../src/macc_fpga2015.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/macc_fpga2015.d
-
-$(ObjDir)/macc_par_convs.o: ../../../src/macc_par_convs.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../src/macc_par_convs.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/macc_par_convs.d
+-include $(ObjDir)/macc_zynqnet.d
 
 $(ObjDir)/macc_util.o: ../../../src/macc_util.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../src/macc_util.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
@@ -111,8 +87,32 @@ $(ObjDir)/macc_util.o: ../../../src/macc_util.cpp $(ObjDir)/.dir
 
 -include $(ObjDir)/macc_util.d
 
-$(ObjDir)/macc_zynqnet.o: ../../../src/macc_zynqnet.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../src/macc_zynqnet.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/macc_par_convs.o: ../../../src/macc_par_convs.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../src/macc_par_convs.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/macc_zynqnet.d
+-include $(ObjDir)/macc_par_convs.d
+
+$(ObjDir)/macc_fpga2015.o: ../../../src/macc_fpga2015.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../src/macc_fpga2015.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/macc_fpga2015.d
+
+$(ObjDir)/macc_caffe.o: ../../../src/macc_caffe.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../src/macc_caffe.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/macc_caffe.d
+
+$(ObjDir)/macc_4d.o: ../../../src/macc_4d.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../src/macc_4d.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/macc_4d.d
+
+$(ObjDir)/macc.o: ../../../src/macc.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../src/macc.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/macc.d

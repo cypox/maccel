@@ -42166,9 +42166,9 @@ struct ap_ufixed: ap_fixed_base<_AP_W, _AP_I, false, _AP_Q, _AP_O, _AP_N> {
 //#define OUTPUT_SIZE 1204224 // equivalent to 1 * 96 * 112 * 112 FASTER R-CNN layer 1
 
 //typedef float data_t; // THIS WILL NOT PROVOKE EXPRESSION BALANCING
-//typedef int data_t;
+typedef int data_t;
 //typedef ap_int<4> data_t;
-typedef ap_fixed<8, 4> data_t;
+//typedef ap_fixed<8, 4> data_t;
 typedef unsigned int uint;
 
 
@@ -42192,16 +42192,23 @@ _ssdm_op_SpecInterface(B, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", ""
 _ssdm_op_SpecInterface(C, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 
-_ssdm_SpecArrayPartition( A, 3, "CYCLIC", 3, "");
+_ssdm_SpecArrayPartition( A, 2, "CYCLIC", 3, "");
 _ssdm_SpecArrayPartition( B, 2, "CYCLIC", 3, "");
+
+ //uint res_size = INPUT_C*WEIGHT_H*WEIGHT_W;
+
  for ( uint center_x = 0 ; center_x < ((224 + 2 * 0 - 3 ) / 1 + 1) ; ++ center_x )
  {
+  uint start_x = 1 * center_x - 0;
   for ( uint center_y = 0 ; center_y < ((224 + 2 * 0 - 3 ) / 1 + 1) ; ++ center_y )
   {
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ uint start_y = 1 * center_y - 0;
    for ( uint channel_out = 0 ; channel_out < 32 ; ++ channel_out )
    {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- data_t result = 0;
+_ssdm_Unroll(0,0,0, "");
+ //data_t result[INPUT_C*WEIGHT_H*WEIGHT_W];
+    data_t result = 0;
     for ( uint channel_in = 0 ; channel_in < 3 ; ++ channel_in )
     {
 _ssdm_Unroll(0,0,0, "");
@@ -42211,13 +42218,17 @@ _ssdm_Unroll(0,0,0, "");
  for ( uint j = 0 ; j < 3 ; ++ j )
       {
 _ssdm_Unroll(0,0,0, "");
- uint input_x, input_y;
-       input_x = 1 * center_x + i - 0;
-       input_y = 1 * center_y + j - 0;
-       result += A[0][channel_in][input_x][input_y] * B[channel_out][channel_in][i][j];
+ //result[channel_in*INPUT_C*WEIGHT_H+i*WEIGHT_H+j] = A[0][channel_in][start_x + i][start_y + j] * B[channel_out][channel_in][i][j];
+       result += A[0][channel_in][start_x + i][start_y + j] * B[channel_out][channel_in][i][j];
       }
      }
     }
+    /*
+				uint final_result = 0;
+				for ( uint i = 0 ; i < res_size ; ++ i)
+					final_result += result[i];
+				C[0][channel_out][center_x][center_y] = final_result;
+				*/
     C[0][channel_out][center_x][center_y] = result;
    }
   }
