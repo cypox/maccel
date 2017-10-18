@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2017.2_sdx (64-bit)
+# SW Build 1972098 on Wed Aug 23 11:34:38 MDT 2017
+# IP Build 1971916 on Wed Aug 23 13:11:02 MDT 2017
+# Start of session at: Wed Oct 18 14:23:58 2017
+# Process ID: 12119
+# Current directory: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/macc_4d/xsim_script.tcl}
+# Log file: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/xsim.log
+# Journal file: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in /opt/Xilinx/SDx/2017.2/Vivado/scripts/init.tcl is deprecated. Please use xsim_init.tcl 
+Sourcing tcl script '/opt/Xilinx/SDx/2017.2/Vivado/scripts/init.tcl'
+Loaded SDSoC Platform Tcl Library
+source xsim.dir/macc_4d/xsim_script.tcl
+# xsim {macc_4d} -autoloadwcfg -tclbatch {macc_4d.tcl}
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+source macc_4d.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [0.00%] @ "24082865000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 24082905 ns : File "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v" Line 844
+run: Time (s): cpu = 00:00:00.20 ; elapsed = 00:26:46 . Memory (MB): peak = 1016.734 ; gain = 0.000 ; free physical = 1016 ; free virtual = 10324
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 18 14:51:13 2017...

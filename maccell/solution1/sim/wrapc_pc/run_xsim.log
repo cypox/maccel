@@ -1,0 +1,127 @@
+███╗   ███╗ █████╗  ██████╗ ██████╗███████╗██╗     
+████╗ ████║██╔══██╗██╔════╝██╔════╝██╔════╝██║     
+██╔████╔██║███████║██║     ██║     █████╗  ██║     
+██║╚██╔╝██║██╔══██║██║     ██║     ██╔══╝  ██║     
+██║ ╚═╝ ██║██║  ██║╚██████╗╚██████╗███████╗███████╗
+╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝╚══════╝╚══════╝
+                                                   
+
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/Xilinx/SDx/2017.2/Vivado/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/SDx/2017.2/Vivado/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_macc_4d_top -prj macc_4d.prj -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 --initfile /opt/Xilinx/SDx/2017.2/Vivado/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s macc_4d 
+Multi-threading is on. Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/AESL_autobram_B_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module macc_4d
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_macc_4d_top
+INFO: [VRFC 10-2458] undeclared symbol bramA_0_Rst_A, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:426]
+INFO: [VRFC 10-2458] undeclared symbol bramA_0_Rst_B, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:433]
+INFO: [VRFC 10-2458] undeclared symbol bramA_1_Rst_A, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:476]
+INFO: [VRFC 10-2458] undeclared symbol bramA_1_Rst_B, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:483]
+INFO: [VRFC 10-2458] undeclared symbol bramA_2_Rst_A, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:526]
+INFO: [VRFC 10-2458] undeclared symbol bramA_2_Rst_B, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:533]
+INFO: [VRFC 10-2458] undeclared symbol bramB_0_Rst_A, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:576]
+INFO: [VRFC 10-2458] undeclared symbol bramB_0_Rst_B, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:583]
+INFO: [VRFC 10-2458] undeclared symbol bramB_1_Rst_A, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:626]
+INFO: [VRFC 10-2458] undeclared symbol bramB_1_Rst_B, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:633]
+INFO: [VRFC 10-2458] undeclared symbol bramB_2_Rst_A, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:676]
+INFO: [VRFC 10-2458] undeclared symbol bramB_2_Rst_B, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:683]
+INFO: [VRFC 10-2458] undeclared symbol bramC_Rst_A, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:726]
+INFO: [VRFC 10-2458] undeclared symbol bramC_Rst_B, assumed default net type wire [/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v:733]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/AESL_autobram_A_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/AESL_autobram_B_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/AESL_autobram_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_C
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d_mul_mul_1cud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module macc_4d_mul_mul_1cud_DSP48_1
+INFO: [VRFC 10-311] analyzing module macc_4d_mul_mul_1cud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/AESL_autobram_A_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/AESL_axi_slave_CTRL_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL_BUS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d_CTRL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module macc_4d_CTRL_BUS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d_mac_muladbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module macc_4d_mac_muladbkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module macc_4d_mac_muladbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/AESL_autobram_A_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/AESL_autobram_B_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_2
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.macc_4d_CTRL_BUS_s_axi(C_S_AXI_A...
+Compiling module xil_defaultlib.macc_4d_mac_muladbkb_DSP48_0
+Compiling module xil_defaultlib.macc_4d_mac_muladbkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.macc_4d_mul_mul_1cud_DSP48_1
+Compiling module xil_defaultlib.macc_4d_mul_mul_1cud(ID=1,NUM_ST...
+Compiling module xil_defaultlib.macc_4d
+Compiling module xil_defaultlib.AESL_autobram_A_0
+Compiling module xil_defaultlib.AESL_autobram_A_1
+Compiling module xil_defaultlib.AESL_autobram_A_2
+Compiling module xil_defaultlib.AESL_autobram_B_0
+Compiling module xil_defaultlib.AESL_autobram_B_1
+Compiling module xil_defaultlib.AESL_autobram_B_2
+Compiling module xil_defaultlib.AESL_autobram_C
+Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
+Compiling module xil_defaultlib.apatb_macc_4d_top
+Built simulation snapshot macc_4d
+
+
+****** Webtalk v2017.2_sdx (64-bit)
+  **** SW Build 1972098 on Wed Aug 23 11:34:38 MDT 2017
+  **** IP Build 1971916 on Wed Aug 23 13:11:02 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-1460] Use of init.tcl in /opt/Xilinx/SDx/2017.2/Vivado/scripts/init.tcl is deprecated. Please use Webtalk_init.tcl 
+Sourcing tcl script '/opt/Xilinx/SDx/2017.2/Vivado/scripts/init.tcl'
+Loaded SDSoC Platform Tcl Library
+source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/xsim.dir/macc_4d/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00.54 ; elapsed = 00:00:07 . Memory (MB): peak = 233.820 ; gain = 0.000 ; free physical = 198 ; free virtual = 9220
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 18 14:23:57 2017...
+
+
+****** xsim v2017.2_sdx (64-bit)
+  **** SW Build 1972098 on Wed Aug 23 11:34:38 MDT 2017
+  **** IP Build 1971916 on Wed Aug 23 13:11:02 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-1460] Use of init.tcl in /opt/Xilinx/SDx/2017.2/Vivado/scripts/init.tcl is deprecated. Please use xsim_init.tcl 
+Sourcing tcl script '/opt/Xilinx/SDx/2017.2/Vivado/scripts/init.tcl'
+Loaded SDSoC Platform Tcl Library
+source xsim.dir/macc_4d/xsim_script.tcl
+# xsim {macc_4d} -autoloadwcfg -tclbatch {macc_4d.tcl}
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+source macc_4d.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [0.00%] @ "24082865000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 24082905 ns : File "/home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/macc_4d.autotb.v" Line 844
+run: Time (s): cpu = 00:00:00.20 ; elapsed = 00:26:46 . Memory (MB): peak = 1016.734 ; gain = 0.000 ; free physical = 1016 ; free virtual = 10324
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 18 14:51:13 2017...
+███╗   ███╗ █████╗  ██████╗ ██████╗███████╗██╗     
+████╗ ████║██╔══██╗██╔════╝██╔════╝██╔════╝██║     
+██╔████╔██║███████║██║     ██║     █████╗  ██║     
+██║╚██╔╝██║██╔══██║██║     ██║     ██╔══╝  ██║     
+██║ ╚═╝ ██║██║  ██║╚██████╗╚██████╗███████╗███████╗
+╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝╚══════╝╚══════╝
+                                                   

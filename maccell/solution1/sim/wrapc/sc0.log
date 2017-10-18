@@ -1,0 +1,11 @@
+   Build using "/opt/Xilinx/SDx/2017.2/Vivado_HLS/lnx64/tools/gcc/bin/g++"
+   Compiling apatb_macc_4d.cpp
+   Compiling macc_util.cpp_pre.cpp.tb.cpp
+   Compiling macc_fpga2015.cpp_pre.cpp.tb.cpp
+   Compiling macc.cpp_pre.cpp.tb.cpp
+   Compiling macc_zynqnet.cpp_pre.cpp.tb.cpp
+   Compiling macc_par_convs.cpp_pre.cpp.tb.cpp
+   Compiling macc_4d.cpp_pre.cpp.tb.cpp
+   Compiling main.cpp_pre.cpp.tb.cpp
+   Compiling macc_caffe.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

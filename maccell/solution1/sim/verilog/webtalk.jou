@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2_sdx (64-bit)
+# SW Build 1972098 on Wed Aug 23 11:34:38 MDT 2017
+# IP Build 1971916 on Wed Aug 23 13:11:02 MDT 2017
+# Start of session at: Wed Oct 18 14:51:10 2017
+# Process ID: 12545
+# Current directory: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/xsim.dir/macc_4d/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/webtalk.log
+# Journal file: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/sim/verilog/xsim.dir/macc_4d/webtalk/xsim_webtalk.tcl -notrace
