@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="macc_zynqnet.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_zynqnet.cpp"/>
-    <originFiles name="macc_util.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_util.cpp"/>
-    <originFiles name="macc_par_convs.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_par_convs.cpp"/>
-    <originFiles name="macc_fpga2015.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_fpga2015.cpp"/>
-    <originFiles name="macc_caffe.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_caffe.cpp"/>
-    <originFiles name="macc_4d.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_4d.cpp"/>
-    <originFiles name="macc.h" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc.h"/>
     <originFiles name="macc.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc.cpp"/>
+    <originFiles name="macc.h" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc.h"/>
+    <originFiles name="macc_4d.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_4d.cpp"/>
+    <originFiles name="macc_caffe.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_caffe.cpp"/>
+    <originFiles name="macc_fpga2015.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_fpga2015.cpp"/>
+    <originFiles name="macc_par_convs.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_par_convs.cpp"/>
+    <originFiles name="macc_util.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_util.cpp"/>
+    <originFiles name="macc_zynqnet.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/macc_zynqnet.cpp"/>
   </source>
   <testbench>
     <originFiles name="main.cpp" path="/home/cypox/phd/hls_vivado/maccell/maccell/src/main.cpp"/>

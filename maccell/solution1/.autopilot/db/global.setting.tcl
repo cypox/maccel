@@ -14,7 +14,7 @@ set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
-set HasDSPModule 0
+set HasDSPModule 1
 set ResetLevelFlag 0
 set ResetStyle "control"
 set ResetSyncFlag 1
@@ -41,7 +41,7 @@ set SCTraceFileName "mytrace"
 set SCTraceFileFormat "vcd"
 set SCTraceOption "all"
 set TargetInfo "xczu9eg:-ffvb1156:-1-i-es1"
-set SourceFiles {sc {} c {../src/macc.cpp ../src/macc_4d.cpp ../src/macc_caffe.cpp ../src/macc_fpga2015.cpp ../src/macc_par_convs.cpp ../src/macc_util.cpp ../src/macc_zynqnet.cpp}}
+set SourceFiles {sc {} c {../src/macc_zynqnet.cpp ../src/macc_util.cpp ../src/macc_par_convs.cpp ../src/macc_fpga2015.cpp ../src/macc_caffe.cpp ../src/macc_4d.cpp ../src/macc.cpp}}
 set SourceFlags {sc {} c {{} {} {} {} {} {} {}}}
 set DirectiveFile {/home/cypox/phd/hls_vivado/maccell/maccell/solution1/solution1.directive}
 set TBFiles {verilog ../src/main.cpp bc ../src/main.cpp vhdl ../src/main.cpp sc ../src/main.cpp cas ../src/main.cpp c {}}

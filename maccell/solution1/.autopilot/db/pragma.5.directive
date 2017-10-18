@@ -1,3 +1,60 @@
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
-<sourceFile name=""/>
+<sourceFile name="">
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="INTERFACE">
+<option name="bram" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="A"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="INTERFACE">
+<option name="bram" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="B"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="INTERFACE">
+<option name="bram" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="C"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+<option name="bundle" value="CTRL_BUS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="A"/>
+<option name="block" positionalBoolean="type" value=""/>
+<option name="factor" value="3"/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="B"/>
+<option name="block" positionalBoolean="type" value=""/>
+<option name="factor" value="3"/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="macc_4d" label="">
+<pragma name="UNROLL"/>
+</directive>
+</sourceFile>
 </AutoPilot:ProjectResources>

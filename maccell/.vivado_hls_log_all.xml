@@ -6,50 +6,42 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="maccell" solutionName="solution1" date="2017-10-17T17:35:28.799+0200"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '255'." projectName="maccell" solutionName="solution1" date="2017-10-17T17:35:28.788+0200"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="maccell" solutionName="solution1" date="2017-10-17T17:32:47.831+0200"/>
-        <logs message="@E Simulation failed: SIGSEGV." projectName="maccell" solutionName="solution1" date="2017-10-17T17:32:47.813+0200"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="maccell" solutionName="solution1" date="2017-10-17T17:30:04.885+0200"/>
-      </csimLog>
+      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_2_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.930+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_2_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.781+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_2_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.773+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_2_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.764+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_1_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.761+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_1_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.758+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_1_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.755+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_1_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.752+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_0_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.746+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_0_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.744+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_0_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.741+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_0_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.729+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_2_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.726+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_2_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.724+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_2_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.696+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_2_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.672+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_1_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.659+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_1_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.645+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_1_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.635+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_1_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.628+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_0_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.624+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_0_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.619+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_0_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.613+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_0_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:35.595+0200" type="Warning"/>
-        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('B_1_load_40', maccell/src/macc_4d.cpp:50) on array 'B_1' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'B_1'." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:27.253+0200" type="Warning"/>
-        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('B_0_load_13', maccell/src/macc_4d.cpp:50) on array 'B_0' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'B_0'." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:19.289+0200" type="Warning"/>
-        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('A_1_load_7', maccell/src/macc_4d.cpp:50) on array 'A_1' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'A_1'." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:17.749+0200" type="Warning"/>
-        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('A_0_load_4', maccell/src/macc_4d.cpp:50) on array 'A_0' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'A_0'." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:17.552+0200" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-542] the outer loop is not a perfect loop." projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:12.305+0200" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (maccell/src/macc_4d.cpp:28:26) in function 'macc_4d' : " projectName="maccell" solutionName="solution1" date="2017-10-17T17:20:10.814+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_2_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:10:01.983+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_2_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.433+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_2_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.429+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_2_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.419+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_1_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.410+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_1_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.405+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_1_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.399+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_1_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.391+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_0_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.389+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_0_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.383+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_0_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.376+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/B_0_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.367+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_2_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.361+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_2_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.355+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_2_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.346+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_2_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.333+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_1_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.323+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_1_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.317+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_1_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.311+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_1_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.268+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_0_Din_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.266+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_0_WEN_B' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.255+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_0_Din_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.253+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'macc_4d/A_0_WEN_A' to 0." projectName="maccell" solutionName="solution1" date="2017-10-18T14:09:57.233+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('A_1_load_8', maccell/src/macc_4d.cpp:54) on array 'A_1' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'A_1'." projectName="maccell" solutionName="solution1" date="2017-10-18T14:02:44.749+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('A_0_load_2', maccell/src/macc_4d.cpp:54) on array 'A_0' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'A_0'." projectName="maccell" solutionName="solution1" date="2017-10-18T14:01:09.258+0200" type="Warning"/>
       </synLog>
-      <simLog/>
+      <simLog>
+        <logs message="WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:&#xA;    LIBRARY_PATH" projectName="maccell" solutionName="solution1" date="2017-10-18T14:23:32.336+0200" type="Warning"/>
+      </simLog>
       <mgLog/>
       <packageLog/>
       <csimLog/>

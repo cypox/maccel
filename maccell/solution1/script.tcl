@@ -5,14 +5,14 @@
 ############################################################
 open_project maccell
 set_top macc_4d
-add_files maccell/src/macc_zynqnet.cpp
-add_files maccell/src/macc_util.cpp
-add_files maccell/src/macc_par_convs.cpp
-add_files maccell/src/macc_fpga2015.cpp
-add_files maccell/src/macc_caffe.cpp
-add_files maccell/src/macc_4d.cpp
-add_files maccell/src/macc.h
 add_files maccell/src/macc.cpp
+add_files maccell/src/macc.h
+add_files maccell/src/macc_4d.cpp
+add_files maccell/src/macc_caffe.cpp
+add_files maccell/src/macc_fpga2015.cpp
+add_files maccell/src/macc_par_convs.cpp
+add_files maccell/src/macc_util.cpp
+add_files maccell/src/macc_zynqnet.cpp
 add_files -tb maccell/src/main.cpp
 open_solution "solution1"
 set_part {xczu9eg-ffvb1156-1-i-es1} -tool vivado

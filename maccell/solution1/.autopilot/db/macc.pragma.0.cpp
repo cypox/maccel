@@ -40041,7 +40041,7 @@ struct ap_ufixed: ap_fixed_base<_AP_W, _AP_I, false, _AP_Q, _AP_O, _AP_N> {
 
 
 //#define STREAM_OUTPUT
-#26 "maccell/src/macc.h"
+#27 "maccell/src/macc.h"
 //#define INPUT_SIZE 150528 // 1 * 3 * 224 * 224
 
 
@@ -40060,15 +40060,10 @@ typedef int data_t;
 //typedef ap_int<4> data_t;
 //typedef ap_fixed<8, 4> data_t;
 typedef unsigned int uint;
-
-
-void macc(const data_t A[1*3*224*224], const data_t B[32*3*3*3], data_t C[1*32*((224 + 2 * 0 - 3 ) / 1 + 1)*((224 + 2 * 0 - 3 ) / 1 + 1)]);
-void macc_zynqnet(const data_t A[1*3*224*224], const data_t B[32*3*3*3], data_t C[1*32*((224 + 2 * 0 - 3 ) / 1 + 1)*((224 + 2 * 0 - 3 ) / 1 + 1)]);
-void macc_caffe(const data_t A[1*3*224*224], const data_t B[32*3*3*3], data_t C[1*32*((224 + 2 * 0 - 3 ) / 1 + 1)*((224 + 2 * 0 - 3 ) / 1 + 1)]);
-void macc_par_convs(const data_t A[1*3*224*224], const data_t B[32*3*3*3], data_t C[1*32*((224 + 2 * 0 - 3 ) / 1 + 1)*((224 + 2 * 0 - 3 ) / 1 + 1)]);
-void macc_fpga2015(const data_t A[1*3*224*224], const data_t B[32*3*3*3], data_t C[1*32*((224 + 2 * 0 - 3 ) / 1 + 1)*((224 + 2 * 0 - 3 ) / 1 + 1)]);
-void macc_ref(const data_t A[1*3*224*224], const data_t B[32*3*3*3], data_t C[1*32*((224 + 2 * 0 - 3 ) / 1 + 1)*((224 + 2 * 0 - 3 ) / 1 + 1)]);
+#54 "maccell/src/macc.h"
 void macc_4d(const data_t A[1][3][224][224], const data_t B[32][3][3][3], data_t C[1][32][((224 + 2 * 0 - 3 ) / 1 + 1)][((224 + 2 * 0 - 3 ) / 1 + 1)]);
+void macc_4d_ref(const data_t A[1][3][224][224], const data_t B[32][3][3][3], data_t C[1][32][((224 + 2 * 0 - 3 ) / 1 + 1)][((224 + 2 * 0 - 3 ) / 1 + 1)]);
+
 
 void print_matrix(const data_t V[], uint number, uint channels, uint size);
 void print_python(const data_t V[], uint number, uint channels, uint size);

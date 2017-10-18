@@ -8,20 +8,14 @@ Copyright (C) 1986-2017 Xilinx, Inc. All Rights Reserved.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [LIC 200-101] Checked out feature [xczu9eg-es1]
 INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-1-i-es1'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-@E Simulation failed: Function 'main' returns nonzero value '255'.
-ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-4
-    while executing
-"source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/csim.tcl"
-    invoked from within
-"hls::main /home/cypox/phd/hls_vivado/maccell/maccell/solution1/csim.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
 INFO: [LIC 200-101] Checked in feature [xczu9eg-es1]

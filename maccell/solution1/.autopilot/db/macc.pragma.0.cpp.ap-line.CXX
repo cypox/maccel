@@ -614,5 +614,6 @@
 #pragma line 12 "maccell/src/macc.h" 2 ::: 40023
 #pragma line 1 "/opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/autopilot/ap_fixed.h" 1 ::: 40024
 #pragma line 13 "maccell/src/macc.h" 2 ::: 40029
-#pragma line 26 "maccell/src/macc.h" ::: 40033
-#pragma line 9 "maccell/src/macc.cpp" 2 ::: 40064
+#pragma line 27 "maccell/src/macc.h" ::: 40033
+#pragma line 54 "maccell/src/macc.h" ::: 40052
+#pragma line 9 "maccell/src/macc.cpp" 2 ::: 40059

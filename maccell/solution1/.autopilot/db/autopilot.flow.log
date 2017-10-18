@@ -1,4 +1,4 @@
-INFO: [HLS 200-0] Workspace /home/cypox/phd/hls_vivado/maccell/maccell/solution1 opened at Tue Oct 17 17:35:26 CEST 2017
+INFO: [HLS 200-0] Workspace /home/cypox/phd/hls_vivado/maccell/maccell/solution1 opened at Wed Oct 18 14:20:45 CEST 2017
 INFO: [HLS 200-100] Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-100] Command     config_clock returned 0; 0 sec.
@@ -17,7 +17,7 @@ INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/c
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/saxilite.lib 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command         ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute         source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/dsp48.lib 
 INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute         source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/ip/xfft.lib 
@@ -63,39 +63,39 @@ INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute         source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/dsp48.hlp 
 INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Command       ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command     import_lib returned 0; 0.03 sec.
+INFO: [HLS 200-100] Command     import_lib returned 0; 0.02 sec.
 INFO: [HLS 200-100] Execute     source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/zynquplus/zynquplus.gen 
 INFO: [HLS 200-100] Execute       source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
 INFO: [HLS 200-100] Execute         source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
-INFO: [HLS 200-100] Command           ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
 INFO: [HLS 200-100] Execute             source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-INFO: [HLS 200-100] Command             ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Execute             source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
 INFO: [HLS 200-100] Command             ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Execute             source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
+INFO: [HLS 200-100] Command             ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Command           ap_source returned 0; 0.01 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0.01 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0.01 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-INFO: [HLS 200-100] Command           ap_source returned 0; 0.14 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.07 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/ip/util.gen 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command         ap_source returned 0; 0.19 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.1 sec.
 INFO: [HLS 200-100] Execute         source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
 INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command       ap_source returned 0; 0.19 sec.
-INFO: [HLS 200-100] Command     ap_source returned 0; 0.19 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0.1 sec.
+INFO: [HLS 200-100] Command     ap_source returned 0; 0.1 sec.
 INFO: [HLS 200-100] Execute     open_platform DefaultPlatform 
 INFO: [HLS 200-100] Command     open_platform returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     import_lib /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/zynquplus/zynquplus_fpv7 
@@ -111,15 +111,15 @@ INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/c
 INFO: [HLS 200-100] Execute             source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/maxi.hlp 
 INFO: [HLS 200-100] Command             ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute             source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/saxilite.hlp 
-INFO: [HLS 200-100] Command             ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Command             ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.01 sec.
 INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/dsp48.hlp 
 INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command       ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0.01 sec.
 INFO: [HLS 200-100] Execute       source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/zynquplus/zynquplus_hp.hlp 
 INFO: [HLS 200-100] Command       ap_source returned 0; 0 sec.
-INFO: [HLS 200-100] Command     import_lib returned 0; 0.03 sec.
+INFO: [HLS 200-100] Command     import_lib returned 0; 0.02 sec.
 INFO: [HLS 200-100] Execute     source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
 INFO: [HLS 200-100] Execute       source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO: [HLS 200-100] Command       ap_source returned 0; 0 sec.
@@ -133,14 +133,14 @@ INFO: [HLS 200-100] Command         license_isbetapart returned 0; 0.01 sec.
 INFO: [HLS 200-100] Execute         license_exists xczu9eg-es1 
 INFO: [LICQ 200-103] Checked out feature [xczu9eg-es1]
 INFO: [LIC 200-101] Checked out feature [xczu9eg-es1]
-INFO: [HLS 200-100] Command         license_exists returned 0; 0.03 sec.
+INFO: [HLS 200-100] Command         license_exists returned 0; 0.05 sec.
 INFO: [HLS 200-100] Execute         get_default_platform 
 INFO: [HLS 200-100] Command         get_default_platform returned 0; 0 sec.
 INFO: [HLS 200-100] Execute         config_chip_info -quiet -resource  {SLICE 34260} {LUT 274080}   {FF 548160}  {DSP48E 2520}  {BRAM 1824} {URAM 0}  
 INFO: [HLS 200-100] Command         config_chip_info returned 0; 0 sec.
 INFO: [HLS 200-100] Execute         config_chip_info -quiet -speed slow 
 INFO: [HLS 200-100] Command         config_chip_info returned 0; 0 sec.
-INFO: [HLS 200-100] Command       add_library returned 0; 0.04 sec.
+INFO: [HLS 200-100] Command       add_library returned 0; 0.07 sec.
 INFO: [HLS 200-100] Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
 INFO: [HLS 200-100] Execute         get_default_platform 
 INFO: [HLS 200-100] Command         get_default_platform returned 0; 0 sec.
@@ -155,67 +155,221 @@ INFO: [HLS 200-100] Execute     config_chip_info -quiet -resource  {SLICE 34260}
 INFO: [HLS 200-100] Command     config_chip_info returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     config_chip_info -quiet -speed slow 
 INFO: [HLS 200-100] Command     config_chip_info returned 0; 0 sec.
-INFO: [HLS 200-100] Command   open_solution returned 0; 0.35 sec.
-INFO: [HLS 200-100] Execute   csim_design -compiler gcc -quiet 
+INFO: [HLS 200-100] Command   open_solution returned 0; 0.24 sec.
+INFO: [HLS 200-100] Execute   cosim_design 
 INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/global.setting.tcl 
 INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-INFO: [HLS 200-100] Execute     source csim/.lst_opt.tcl 
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/global.setting.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/global.setting.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/generic/autopilot/common.gen 
+INFO: [HLS 200-100] Execute       source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/generic/autopilot/APCoreGen.gen 
+INFO: [HLS 200-100] Command       ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/generic/autopilot/op.gen 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/generic/autopilot/op_simcore.gen 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/generic/autopilot/interface.gen 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/global.setting.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/zynquplus/zynquplus.gen 
+INFO: [HLS 200-100] Execute       source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
+INFO: [HLS 200-100] Execute         source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
+INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
+INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
+INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
+INFO: [HLS 200-100] Execute             source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
+INFO: [HLS 200-100] Command             ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute             source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
+INFO: [HLS 200-100] Command             ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
+INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
+INFO: [HLS 200-100] Command           ap_source returned 0; 0.07 sec.
+INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
+INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
+INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute           source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/ip/util.gen 
+INFO: [HLS 200-100] Command           ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Command         ap_source returned 0; 0.1 sec.
+INFO: [HLS 200-100] Execute         source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
+INFO: [HLS 200-100] Command         ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Command       ap_source returned 0; 0.1 sec.
+INFO: [HLS 200-100] Command     ap_source returned 0; 0.1 sec.
+INFO: [HLS 200-100] Execute     source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+INFO: [HLS 200-100] Execute       source /opt/Xilinx/SDx/2017.2/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-100] Command       ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/global.setting.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.rtl_wrap.cfg.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0.02 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
 INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/main.cpp 
 INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_xip /home/cypox/phd/hls_vivado/maccell/maccell/src/main.cpp 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_zynqnet.cpp 
-INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_xip /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_zynqnet.cpp 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_util.cpp 
-INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_xip /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_util.cpp 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_par_convs.cpp 
-INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_xip /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_par_convs.cpp 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_fpga2015.cpp 
-INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_xip /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_fpga2015.cpp 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_caffe.cpp 
-INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_xip /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_caffe.cpp 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_4d.cpp 
-INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_xip /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_4d.cpp 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc.h 
-INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_xip /home/cypox/phd/hls_vivado/maccell/maccell/src/macc.h 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
 INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc.cpp 
 INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     is_xip /home/cypox/phd/hls_vivado/maccell/maccell/src/macc.cpp 
-INFO: [HLS 200-100] Command     is_xip returned 0; 0 sec.
-INFO: [HLS 200-100] Execute     source run_sim.tcl 
-@E Simulation failed: Function 'main' returns nonzero value '255'.
-INFO: [HLS 200-100] Command     ap_source returned 1; 0.79 sec.
-ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-100] Command   csim_design returned 2; 1.75 sec.
-INFO: [HLS 200-100] Command ap_source returned 1; 2.11 sec.
-4
-    while executing
-"source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/csim.tcl"
-    invoked from within
-"hls::main /home/cypox/phd/hls_vivado/maccell/maccell/solution1/csim.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"
+INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc.h 
+INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_4d.cpp 
+INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_caffe.cpp 
+INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_fpga2015.cpp 
+INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_par_convs.cpp 
+INFO: [HLS 200-100] Command     is_encrypted returned 0; 0.01 sec.
+INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_util.cpp 
+INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     is_encrypted /home/cypox/phd/hls_vivado/maccell/maccell/src/macc_zynqnet.cpp 
+INFO: [HLS 200-100] Command     is_encrypted returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [HLS 200-0] Marker-Pragma convertor: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/main.cpp_pre.cpp /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/main.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO: [HLS 200-0] Converting Markers to Pragmas...
+INFO: [HLS 200-0] Marker-Pragma convertor: ./sim/autowrap/testbench/main.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/main.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO: [HLS 200-0] Converting Pragmas to Markers...
+INFO: [HLS 200-0] Marker-Pragma convertor: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc.cpp_pre.cpp /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO: [HLS 200-0] Converting Markers to Pragmas...
+INFO: [HLS 200-0] Marker-Pragma convertor: ./sim/autowrap/testbench/macc.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/macc.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO: [HLS 200-0] Converting Pragmas to Markers...
+INFO: [HLS 200-0] Marker-Pragma convertor: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_4d.cpp_pre.cpp /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_4d.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO: [HLS 200-0] Converting Markers to Pragmas...
+INFO: [HLS 200-0] Marker-Pragma convertor: ./sim/autowrap/testbench/macc_4d.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/macc_4d.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO: [HLS 200-0] Converting Pragmas to Markers...
+INFO: [HLS 200-0] Marker-Pragma convertor: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_caffe.cpp_pre.cpp /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_caffe.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO: [HLS 200-0] Converting Markers to Pragmas...
+INFO: [HLS 200-0] Marker-Pragma convertor: ./sim/autowrap/testbench/macc_caffe.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/macc_caffe.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO: [HLS 200-0] Converting Pragmas to Markers...
+INFO: [HLS 200-0] Marker-Pragma convertor: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_fpga2015.cpp_pre.cpp /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_fpga2015.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO: [HLS 200-0] Converting Markers to Pragmas...
+INFO: [HLS 200-0] Marker-Pragma convertor: ./sim/autowrap/testbench/macc_fpga2015.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/macc_fpga2015.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO: [HLS 200-0] Converting Pragmas to Markers...
+INFO: [HLS 200-0] Marker-Pragma convertor: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_par_convs.cpp_pre.cpp /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_par_convs.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO: [HLS 200-0] Converting Markers to Pragmas...
+INFO: [HLS 200-0] Marker-Pragma convertor: ./sim/autowrap/testbench/macc_par_convs.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/macc_par_convs.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO: [HLS 200-0] Converting Pragmas to Markers...
+INFO: [HLS 200-0] Marker-Pragma convertor: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_util.cpp_pre.cpp /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_util.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO: [HLS 200-0] Converting Markers to Pragmas...
+INFO: [HLS 200-0] Marker-Pragma convertor: ./sim/autowrap/testbench/macc_util.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/macc_util.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO: [HLS 200-0] Converting Pragmas to Markers...
+INFO: [HLS 200-0] Marker-Pragma convertor: /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_zynqnet.cpp_pre.cpp /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/macc_zynqnet.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO: [HLS 200-0] Converting Markers to Pragmas...
+INFO: [HLS 200-0] Marker-Pragma convertor: ./sim/autowrap/testbench/macc_zynqnet.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/macc_zynqnet.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO: [HLS 200-0] Converting Pragmas to Markers...
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/./sim/autowrap/testbench/tb.status.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/global.setting.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.rtl_wrap.cfg.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.rtl_wrap.cfg.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.rtl_wrap.cfg.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [HLS 200-100] Command     ap_source returned 0; 17.95 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source ../tv/cdatafile/ref.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source ../tv/cdatafile/ref.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute     source /home/cypox/phd/hls_vivado/maccell/maccell/solution1/.autopilot/db/macc_4d.tbgen.tcl 
+INFO: [HLS 200-100] Command     ap_source returned 0; 0.01 sec.
+INFO: [HLS 200-100] Execute     source .run_sim.tcl 
+INFO: [HLS 200-100] Execute       source check_sim.tcl 
+INFO: [HLS 200-100] Command       ap_source returned 0; 0 sec.
+INFO: [HLS 200-100] Execute       source .sim.status.tcl 
+INFO: [HLS 200-100] Command       ap_source returned 0; 0 sec.
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [HLS 200-100] Command     ap_source returned 0; 1675.61 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-100] Command   cosim_design returned 0; 1837.02 sec.
+INFO: [HLS 200-100] Command ap_source returned 0; 1837.27 sec.
 INFO: [HLS 200-100] Execute cleanup_all 
 INFO: [HLS 200-100] Command cleanup_all returned 0; 0 sec.
